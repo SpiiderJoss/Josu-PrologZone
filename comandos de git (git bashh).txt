@@ -27,7 +27,7 @@ git add . ()
 git commit -m 'mi primer comit'
 --------------------------------------------------
 
-ver si hay conexion con ---> git pll origin pull
+ver si hay conexion con ---> git pll --rebase origin main
 
 
 ------------------HACER PUSH---------------------
