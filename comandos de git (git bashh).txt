@@ -16,10 +16,32 @@ git remote add origin <--- en cmd y despues en giy hub buscar en el quick setup 
 
 git branch -M main <---crear rama principal
 
+---------------ANTES DE HACER COMIT STATUS VERDE--------------------
+
 <<<<< git status antes de hacer un git push >>>>>
 
 git add . ()
+--------------------------------------------------------------------
+----------------HACER COMMIT-------------------------
 
-git commit -M 'mi primer comit'
+git commit -m 'mi primer comit'
+--------------------------------------------------
 
 ver si hay conexion con ---> git pll origin pull
+
+
+------------------HACER PUSH---------------------
+git push origin main 
+--------------------------------------------------
+
+en dado caso de que no identifique el usuario y correo escribir:
+
+git config --global user.email "Introducir correo con el que se entra al git"
+
+git config --global user.name "Introduccir username de git"
+
+
+git pull --rebase origin main
+git push origin main
+
+
