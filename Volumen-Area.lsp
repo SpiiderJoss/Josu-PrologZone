@@ -139,4 +139,28 @@
     )
 )
 
+(defun AVPirHex()
+    (princ "-----------Area y Volumen de una Piramide Hexagonal------------------")
+    (terpri)
+    (princ "Dame la longitud de un lado de la base: ")
+    (setq longbase(read))
+    (terpri)
+    (princ "Dame el altura de la piramide: ")
+    (setq altura(read))
+    (terpri)
+    (if(and (> longbase 0) (> altura 0))
+        (progn
+            (princ "El area de la piramide hexagonal es: ")
+            (setq areabase(* (/ (* 3 (sqrt 3)) 2) (* longbase longbase)))
+            (setq arealat(* (/ (* 3 (sqrt 3)) 2) longbase altura))
+            (setq areaT(+ areabase (* 6 arealat)))
+            (write areaT)
+            (princ "El volumen es: ")
+            (setq volbase(/ (* areabase altura) 3))
+            
+        )
+    )
+)
+
+
 
