@@ -68,7 +68,7 @@
 ;Area de Piramide equilatera
 
 (defun AVPiramide()
-    (princ "-----------Area y Volumen de circulo/Cilindro------------------")
+    (princ "-----------Area y Volumen de piramide equilatera------------------")
     (terpri)    
     (princ "Dame la longitud de la base: ")
     (setq longitud(read))
@@ -187,6 +187,34 @@
             (terpri)
         )
     )
+)
+
+
+;Prisma hexagonal
+(defun VAPrHEx()
+    (princ "-----------Area y Volumen de un prisma HEXAGONAL------------------")
+    (terpri)
+    (princ "dame la longitud de uno de los lados de la base: ")
+    (setq Lbhex(read))
+    (terpri)
+    (princ "Dame la altura del prisma: ")
+    (setq altPHex(read))
+    (terpri)
+
+    (if (and (> Lbhex 0) (> altPHex 0))
+        (progn
+            (setq AreaBaseHex(* (* Lbhex Lbhex) (/ (* 3 (sqrt 3)) 2)))
+            (setq AreaTHex(* 6 AreaBaseHex))
+            (princ "El area del prisma hexagonal: ")
+            (write AreaTHex)
+            (terpri)
+            (princ "El volumen del prisma hexagonal es: ")
+            (setq VolHex(* AreaBaseHex altPHex))
+            (write VolHex)
+            (terpri)
+        )
+    )
+
 )
 
 
