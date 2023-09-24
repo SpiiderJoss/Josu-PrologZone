@@ -89,3 +89,15 @@
             (zerop (mod año 400)))
             (format t "~a no es un año bisiesto.~%" año))
 )
+
+(defun Ej5()
+    (princ "dame el numero de mes: ")
+    (setq mes(read))
+    (terpri)
+    (cond
+        ((= mes 2) 28)
+        ((member mes '(4 6 9 11)) 30)
+        ((member mes '(1 3 5 7 8 10 12)) 31)
+        (t "MES ERRONEO")
+    )
+)
