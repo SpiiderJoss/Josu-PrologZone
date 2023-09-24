@@ -78,8 +78,14 @@
 )
 
 (defun Ej4()
-    (princ "Dame el año para determinar si es bisiesto o no.")
+    (princ "Dame el año para determinar si es bisiesto o no: ")
     (setq año(read))
     (terpri)
-    
+    (when (or (and (zerop (mod año 4)) (not (zerop (mod año 100))))
+            (zerop (mod año 400)))
+            (format t "~a es un año bisiesto.~%" año)
+    )
+    (unless (or (and (zerop (mod año 4)) (not (zerop (mod año 100))))
+            (zerop (mod año 400)))
+            (format t "~a no es un año bisiesto.~%" año))
 )
