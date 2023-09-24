@@ -61,3 +61,26 @@
     )
 
 )
+
+(defun Ej3()
+    (princ "Dame una letra minuscula :")
+    (setq letra(read-char))
+        (if (equal letra (char-downcase letra))
+            (progn 
+                (case letra
+                ((#\a #\e #\i #\o #\u) (format t "La letra ~a es una vocal.~%" letra))
+                (#\y (format t "La letra ~a es una semivocal.~%" letra))
+                (t (format t "La letra ~a es una consonante.~%" letra))
+                )
+            )
+            (princ "la letra debe ser minuscula. ") 
+        )
+)
+
+(defun Ej4()
+    (princ "Dame el año para determinar si es bisiesto o no.")
+    (setq año(read))
+    (terpri)
+    
+
+)
