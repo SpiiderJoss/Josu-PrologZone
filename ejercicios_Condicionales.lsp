@@ -81,8 +81,5 @@
     (princ "Dame el año para determinar si es bisiesto o no.")
     (setq año(read))
     (terpri)
-
-
     
-
 )
