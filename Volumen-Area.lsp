@@ -109,6 +109,11 @@
 )
 
 ;Area y volumen de cono
+;funciones lambda 
+(defvar *GMatriz* (lambda (raco alton) (sqrt (+ (* raco raco) (* altcon altcon)))))
+(defvar *ACono* (lambda ( pi raco altcon) (* pi raco (+ raco (funcall *GMatriz* raco altcon)))))
+(defvar *VCono* (lambda (pi raco altcon) (/ (* pi (* raco raco) altcon) 3)))
+
 (defun AVCono()
     (princ "-----------Area y Volumen de Cono------------------")
     (terpri)    
@@ -121,19 +126,20 @@
 
     (if (and (> raco 0) (> altcon 0))
         (progn
-            (setq generatriz(sqrt (+ (* raco raco) (* altcon altcon))))
-            (setq areaCono(* pi raco (+ raco generatriz)))
             (princ "El area del cono es: ")
-            (write areaCono)
+            (write (funcall *ACono* pi raco altcon ))
             (terpri)
             (princ "El volumen del cono es: ")
-            (setq volCono(/ (* pi (* raco raco) altcon) 3))
-            (write volCono)
+            (write (funcall *VCono* pi raco altcon))
             (terpri)
         )
     )
 )
 ;Area y volumen de una Esfera
+;funciones lambda
+(defvar *AEsfera* (lambda (pi radio) (* 4 pi (* radio radio))))
+(defvar *VEsfera* (lambda (pi radio) (* (/ 4 3) pi (* radio radio radio))))
+
 (defun AVEsfera()
     (princ "-----------Area y Volumen de una Esfera------------------")
     (terpri) 
@@ -143,16 +149,22 @@
     (if (> radio 0)
         (progn
             (princ "El area de la esfera es: ")
-            (setq area(* 4 pi (* radio radio)))
-            (write area)
+            (write (funcall *AEsfera* pi radio))
             (terpri)
             (princ "El volumen de la esfera es: ")
-            (setq volumen(* (/ 4 3) pi (* radio radio radio)))
-            (write volumen)
+            (write (funcall *VEsfera* pi raco))
             (terpri)
         )
     )
 )
+
+;Piramide Hexagonal
+;funciones lambda
+
+(defvar *ABPH* (lambda (longbase) (* (/ (* 3 (sqrt 3)) 2) (* longbase longbase))))
+(defvar *ALPH* (lambda (longbase altura) (* (/ (* 3 (sqrt 3)) 2) longbase altura)))
+(defvar *ATPH* (lambda (longbase altura) (+ (funcall *ABPH* longbase) (* 6 (funcall *ALPH* longbase altura)))))
+(defvar *VPH* (lambda (longbase altura) (/ (* (funcall *ABPH* longbase) altura))))
 
 (defun AVPirHex()
     (princ "-----------Area y Volumen de una Piramide Hexagonal------------------")
@@ -166,16 +178,14 @@
     (if(and (> longbase 0) (> altura 0))
         (progn
             (princ "El area de la piramide hexagonal es: ")
-            (setq areabase(* (/ (* 3 (sqrt 3)) 2) (* longbase longbase)))
-            (setq arealat(* (/ (* 3 (sqrt 3)) 2) longbase altura))
-            (setq areaT(+ areabase (* 6 arealat)))
-            (write areaT)
+            (write (funcall *ATPH* longbase altura))
+            (terpri)
             (princ "El volumen es: ")
-            (setq volbase(/ (* areabase altura) 3))
-            
+            (write (funcall *VPH* longbase altura))
         )
     )
 )
+
 (defun AVPrismaTr()
     (princ "-----------Area y Volumen de un prisma triangular------------------")
     (terpri)
