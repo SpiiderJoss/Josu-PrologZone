@@ -185,6 +185,12 @@
         )
     )
 )
+;Prisma Triangular
+;funciones lambda 
+(defvar *APT* (lambda (perB altPT) (* perB altPT)))
+(defvar *ABPT* (lambda (altB perB) (* 2 (/ (* altB perB) 2))))
+(defvar *ATPT* (lambda (altB perB) (+ (funcall *APT* perb altPT) (* (funcall *ABPT* perB altB) 2))))
+(defvar *VPT* (lambda (altPT) (* (funcall *ABPT* altB perB) altPT)))
 
 (defun AVPrismaTr()
     (princ "-----------Area y Volumen de un prisma triangular------------------")
@@ -200,15 +206,11 @@
     (terpri)
     (if(and (> perB 0) (> altB 0) (> altPT 0))
         (progn
-            (setq AreaPrisma(* perB altPT))
-            (setq AreaBase(* 2 (/ (* altB perB) 2)))
-            (setq AreaTotal(+ AreaPrisma (* AreaBase 2)))
             (princ "El area del prisma triangular es: ")
-            (write AreaTotal)
+            (write (funcall *ATPT* altB perB))
             (terpri)
-            (setq VolumenPrisma(* AreaBase altPT))
             (princ "El volumen del prisma triangular es: ")
-            (write VolumenPrisma)
+            (write (funcall *VPT* altPT))
             (terpri)
         )
     )
