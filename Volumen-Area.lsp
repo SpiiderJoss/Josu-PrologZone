@@ -1,5 +1,10 @@
 ;---------------AREAS Y VOLUMENES------------------------------
 ;Area y volumen de Cubo
+
+;Funciones lambda
+(defvar *ACubo* (lambda (x) (* 6(* x x))))
+(defvar *VCubo* (lambda (x) (* x x x)))
+
 (defun AVCubo()
     (princ "-----------Area y Volumen de cubo------------------")
     (terpri)
@@ -8,11 +13,11 @@
     (if(and (/= x 0) (> x 0))
     (progn
         (princ "El area del cubo es: ")
-        (write (* 6(* x x)))
+        (write (funcall *ACubo* x))
         (terpri)
         (terpri)
         (princ "El volumen del cubo es: ")
-        (write (* x x x))
+       (write (funcall *VCubo* x))
         (terpri)
     )
     (progn
@@ -21,6 +26,11 @@
     )
 )
 ;Area y volumen de Prisma rectangular
+
+;funciones lambda
+(defvar *APrismaR* (lambda (x y z) (* 2 (+ (* x y) (* x z) (* y )))))
+(defvar *VPrismaR* (lambda (x y z) (* x y z)))
+
 (defun AVPrisma()
     (princ "-----------Area y Volumen de prisma rectangular------------------")
     (terpri)
@@ -34,15 +44,20 @@
     (if(and (/= x 0) (/= y 0) (> x 0) (> y 0) (/= z 0) (> z 0))
     (progn
         (princ "El area del Prisama es: ")
-        (write (* 2 (+ (* x y) (* x z) (* y z))))
+        (write (funcall *APrismaR* x y z))
         (terpri)
         (princ "El volumen del prisma es: ")
-        (write (* x y z))
+        (write (funcall *VPrismaR* x y z))
         (terpri)
     )
     )
     )
 ;Area y Volumen de Circulo 
+
+;funciones lambda circulo
+(defvar *ACilindro* (lambda (a b) (* 2 pi a b)))
+(defvar *VCilindro* (lambda (a b) (* pi(* a a ) b)))
+
 (defun AVCirculo()
     (princ "-----------Area y Volumen de circulo/Cilindro------------------")
     (terpri)
@@ -54,12 +69,10 @@
     (if(and (> a 0) (> b 0))
     (progn
         (princ "El area del Cilindro es: ")
-        (setq area(* 2 pi a b))
-        (write area)
+        (write (funcall *ACilindro* a b))
         (terpri)
         (princ "El volumen del Cilindro es: ")
-        (setq volumen(* pi(* a a ) b))
-        (write volumen)
+        (write (funcall *VCilindro* a b))
         (terpri)
     )
     (format t "Alguno de los valores es invalido")
@@ -67,27 +80,29 @@
     )
 ;Area de Piramide equilatera
 
+;funciones lambda priamide equilatera
+(defvar *ABPE* (lambda (longB) (/ (* (sqrt 3) longB longB) 4)))
+(defvar *PBPE* (lambda (longB) (* 3 longB)))
+(defvar *ASPE* (lambda (longB a) (+ (funcall *ABPE* longB) (* 0.5 (funcall *PBPE* longB) a) )))
+(defvar *VP* (lambda (longB a) (/ (* (funcall *ABPE* longB)) 3)))
+
 (defun AVPiramide()
     (princ "-----------Area y Volumen de piramide equilatera------------------")
     (terpri)    
     (princ "Dame la longitud de la base: ")
-    (setq longitud(read))
+    (setq longB(read))
     (terpri)
     (princ "Dame el altura de la piramide: ")
-    (setq altpi(read))
+    (setq a(read))
     (terpri)
-    (if(and (> longitud 0) (> altpi))
+    (if(and (> longB 0) (> a))
     (progn
         (princ "El area de la superficie es: ")
-        (setq areabase(/ (* (sqrt 3) longitud longitud) 4))
-        (setq perminetrobase(* 3 longitud))
-        (setq areasuperficie(+ areabase (* 0.5 perminetrobase altpi)))
-        (write areasuperficie)
+        (write (funcall *ASPE* longB a))
         (terpri)
 
         (princ "El volumen de la piramide es: ")
-        (setq volumen(/ (* areabase altpi) 3))
-        (write volumen)
+        (write (funcall *VP* longB a))
         (terpri)
     )
     )
