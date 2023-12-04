@@ -58,23 +58,148 @@ template([dime, una, rutina, de, entrenamiento, para, ganar, s(_)],['Claro', aqu
 
 
 % preguntas sobre el gym
-template([me, puedes, recomendar, una, rutina, de, entrenamiento, para, s(_)], 
-         ['Claro', 'Aqui tienes una rutina de entrenamiento recomendada:', rutina(_)], [9]).
+template([me, puedes, recomendar, una, rutina, de, pierna, para, ganar,fuerza], 
+         ['Claro', aqui ,tienes,una,rutina,para,ganar,fuerza,de,pierna,:,'Sentadillas:', 4, series, x, '6-8', repeticiones,'Prensa', de, 'piernas:', 3, series, x, '8-10', repeticiones,'Peso', 'muerto:', 4, series, x, '6-8', repeticiones,'Curl', 'femoral:', 3, series, x, '10-12', repeticiones], []).
 
-template([cuales, son, los, beneficios, de, hacer, ejercicio, regularmente],
-         ['Hacer ejercicio regularmente tiene muchos beneficios para la salud. Algunos de ellos incluyen:', beneficios_ejercicio], []).
+template([me, puedes, recomendar, una, rutina, de, espalda, para, ganar,fuerza], 
+         ['Claro aqui tienes una rutina para ganar fuerza de espalda:  Extensiones de espalda: 3 series x 10-12 repeticiones, Pull-ups (dominadas): 4 series hasta el fallo, Pullover con mancuerna: 3 series x 10-12 repeticiones'], []).
 
-template([que, debo, comer, antes, de, hacer, ejercicio],
-         ['Es importante tener una comida equilibrada antes de hacer ejercicio. Puedes considerar comer alimentos ricos en carbohidratos y proteinas.', dieta_antes_ejercicio], []).
+template([me, puedes, recomendar, una, rutina, de, pecho, para, ganar,fuerza], 
+         ['Claro, aqui  tienes una rutina para ganar fuerza de pecho: 
+          Press de banca: 4 series x 6-8 repeticiones,
+          Fondos: 3 series hasta el fallo
+          Press banca inclinado: 4 series x 6.8 repeticiones'], []).
 
-template([como, puedo, mantenerme, motivado, para, hacer, ejercicio],
-         ['Mantenerse',motivado,puede,ser,un,desafio.para,ello,te,recomiendo,:,], []).
+template([me, puedes, recomendar, una, rutina, de, hombro, para, ganar,fuerza], 
+         ['Claro, aqui  tienes una rutina para ganar fuerza de hombro: 
+         Press militar: 3 series x 8-10 repeticiones, 
+         Elevaciones laterales: 3 series x 10-12 repeticiones 
+         Elevaciones frontales: 3 series x 10-12 repeticiones'], []).
 
-template([cuanto, tiempo, debo, descansar, entre, series],
-         ['El', tiempo, de, descanso, entre, series, puede, variar, pero ,generalmente ,se, recomienda, descansar, de, 30, segundos, a, 1, minuto, sin, embargo, esto, depende, de, tus, objetivos, y, nivel, de, entrenamiento], []).
+template([me, puedes, recomendar, una, rutina, de, brazos, para, ganar,fuerza], 
+         ['Claro, aqui  tienes una rutina para ganar fuerza de brazos: 
+         Curl con barra: 4 series x 8-10 repeticiones, 
+         Curl martillo: 3 series x 10-12 repeticiones, 
+         Fondos en paralelas: 3 series x 10-12 repeticiones, 
+         Tríceps en polea alta: 3 series x 10-12 repeticiones,
+         Tríceps en polea con cuerda: 3 series x 10-12 repeticiones'], []).
 
-template([que, ejercicios, son, buenos, para, trabajar, s(_)],
-         ['Hay varios ejercicios efectivos para trabajar', s(_), '. Algunos de ellos incluyen:', ejercicios_recomendados], [6]).
+template([que,consejos,me,puedes,dar,para,el,gym], 
+         ['1.- Realiza calentamiento antes de cada sesión.
+            2.- Incrementa gradualmente el peso a medida que te vuelves más fuerte.
+            3.- Descansa entre 2-3 minutos entre las series de ejercicios principales.
+            4.- Realiza ejercicios compuestos para trabajar varios músculos a la vez.
+            5.- Mantén una buena forma técnica en todo momento.
+            6.- Escucha a tu cuerpo y ajusta la intensidad según sea necesario.
+            7.- Asegúrate de incluir días de descanso en tu semana.'], []).
+
+% Template sobre la etapa de definición en el gym
+template([que, es, la, etapa, de, definicion], 
+    ['La etapa de definición en el gimnasio se refiere a un período enfocado en reducir el porcentaje de grasa corporal', 
+     'para resaltar y definir los músculos. Es comunmente seguida después de una fase de aumento de masa muscular.', 
+     'Durante esta fase, el objetivo principal es perder grasa mientras se mantiene la masa muscular ganada.'], []).
+
+% Template sobre consejos para la etapa de definición
+template([consejos, para, la, etapa, de, definicion], 
+    ['Algunos consejos para la etapa de definicion incluyen:', 
+     '- Manten una dieta balanceada y controla tu ingesta calorica.', 
+     '- Prioriza las proteínas para preservar la masa muscular.', 
+     '- Realiza entrenamiento cardiovascular para quemar calorias adicionales.', 
+     '- Incorpora ejercicios de resistencia para mantener la fuerza muscular.', 
+     '- Bebe suficiente agua para mantener la hidratacion.'], []).
+
+% Template sobre la importancia de la paciencia en la etapa de definición
+template([importancia, de, la, paciencia, en, definicion], 
+    ['La paciencia es clave durante la etapa de definicion.', 
+     'La perdida de grasa lleva tiempo y es importante realizar cambios sostenibles en tu estilo de vida.', 
+     'No te desanimes por resultados inmediatos y enfocate en la consistencia a largo plazo.'], []).
+
+% Template sobre la etapa de volumen en el gym
+template([que, es, la, etapa, de, volumen], 
+    ['La etapa de volumen en el gimnasio es un período dedicado a ganar masa muscular y fuerza.', 
+     'Durante esta fase, el objetivo principal es consumir un excedente calórico para favorecer el crecimiento muscular.', 
+     'Se caracteriza por un entrenamiento intenso con pesas y una ingesta calórica controlada.'], []).
+
+% Template sobre consejos para la etapa de volumen
+template([consejos, para, la, etapa, de, volumen], 
+    ['Algunos consejos para la etapa de volumen incluyen:', 
+     '- Mantén una ingesta calórica suficiente para promover el crecimiento muscular.', 
+     '- Prioriza las proteínas para facilitar la reparación y el crecimiento muscular.', 
+     '- Realiza entrenamiento de fuerza con énfasis en levantamientos compuestos.', 
+     '- Descansa lo suficiente para permitir la recuperación y el crecimiento muscular.', 
+     '- Considera la utilización de suplementos como proteínas y carbohidratos.'], []).
+
+% Template sobre la importancia de la consistencia en la etapa de volumen
+template([importancia, de, la, consistencia, en, volumen], 
+    ['La consistencia es clave durante la etapa de volumen.', 
+     'Es importante mantenerse enfocado en tus objetivos a largo plazo y seguir con la rutina de entrenamiento y la dieta planificada.', 
+     'Los resultados en la fase de volumen se acumulan con el tiempo y la dedicación.'], []).
+
+% Template sobre la mensualidad promedio de gimnasios en México
+template([costo, de, mensualidad, de, gimnasio], 
+    ['El costo de mensualidad de gimnasios en México puede variar ampliamente dependiendo de la ubicación, el tipo de gimnasio y los servicios ofrecidos.',
+     'En promedio, las mensualidades pueden oscilar entre 300 y 400 pesos mexicanos. Se recomienda contactar directamente con los gimnasios locales para obtener información específica.'], []).
+
+% Template sobre factores que afectan el costo de mensualidades en gimnasios
+template([factores, que, afectan, costo, de, mensualidad, de, gimnasio], 
+    ['Varios factores pueden afectar el costo de las mensualidades en gimnasios de México:', 
+     '- La ubicación geográfica: Los gimnasios en ciudades grandes tienden a ser más caros.', 
+     '- Servicios ofrecidos: Gimnasios con instalaciones de lujo o clases especializadas pueden tener tarifas más altas.', 
+     '- Duración del contrato: Algunos gimnasios ofrecen descuentos por contratos a largo plazo.', 
+     '- Promociones y ofertas: Los gimnasios a veces tienen promociones especiales o descuentos temporales.'], []).
+
+% Template sobre opciones de membresía y costos adicionales
+template([opciones, de, membresia, y, costos, adicionales, en, gimnasio], 
+    ['Los gimnasios en México suelen ofrecer diferentes opciones de membresía y costos adicionales:', 
+     '- Membresía mensual estándar: Incluye acceso básico al gimnasio y sus instalaciones.', 
+     '- Membresía premium: Puede incluir acceso a clases especiales, entrenadores personales, y más.', 
+     '- Costos adicionales: Algunos gimnasios pueden tener tarifas adicionales, como inscripción, mantenimiento o servicios específicos.'], []).
+
+% Template sobre qué son los suplementos alimenticios
+template([que, son, los, suplementos, alimenticios], 
+    ['Los suplementos alimenticios son productos diseñados para complementar la dieta y proporcionar nutrientes adicionales.', 
+     'Pueden incluir vitaminas, minerales, aminoácidos, ácidos grasos esenciales, hierbas y otros ingredientes.', 
+     'Están destinados a llenar posibles deficiencias nutricionales o apoyar objetivos específicos como el aumento de masa muscular o la pérdida de peso.'], []).
+
+% Template sobre los beneficios de los suplementos alimenticios
+template([beneficios, de, suplementos, alimenticios], 
+    ['Los suplementos alimenticios pueden ofrecer varios beneficios:', 
+     '- Cubrir deficiencias nutricionales: Ayudan a garantizar que se obtengan todos los nutrientes esenciales.', 
+     '- Apoyo para objetivos específicos: Algunos suplementos son formulados para ayudar en metas como el desarrollo muscular o la recuperación.', 
+     '- Facilidad y conveniencia: Proporcionan una manera práctica de obtener nutrientes adicionales sin depender completamente de la comida.', 
+     '- Mejora del rendimiento: Algunos suplementos están diseñados para mejorar el rendimiento atlético o cognitivo.'], []).
+
+% Template sobre cómo incorporar suplementos en la dieta
+template([como, incorporar, suplementos, en, la, dieta], 
+    ['Incorporar suplementos en la dieta puede hacerse de varias maneras:', 
+     '- Consulta con un profesional: Antes de tomar cualquier suplemento, es recomendable consultar con un profesional de la salud o un nutricionista.', 
+     '- Identifica deficiencias: Si tienes deficiencias nutricionales, un profesional puede recomendar suplementos específicos para cubrirlas.', 
+     '- Integra gradualmente: Introduce los suplementos gradualmente y observa cómo afectan tu cuerpo y tus metas.', 
+     '- Sigue una dosificación adecuada: Sigue las recomendaciones de dosificación para evitar efectos secundarios negativos.'], []).
+
+% Template sobre qué son las proteínas en polvo
+template([que, son, las, proteinas, en, polvo], 
+    ['Las proteínas en polvo son suplementos alimenticios que proporcionan una fuente concentrada de proteínas.', 
+     'Suelen derivarse de fuentes como suero de leche, caseína, soja, guisante o arroz.', 
+     'Son populares entre aquellos que buscan aumentar la ingesta proteica para apoyar el crecimiento muscular y la recuperación.'], []).
+
+% Template sobre los beneficios de las proteínas en polvo
+template([beneficios, de, proteinas, en, polvo], 
+    ['Las proteínas en polvo ofrecen varios beneficios:', 
+     '- Aumento de la ingesta proteica: Son una forma conveniente de alcanzar los objetivos diarios de proteínas.', 
+     '- Recuperación muscular: Ayudan en la reparación y el crecimiento muscular después del ejercicio.', 
+     '- Control del peso: Pueden ser útiles en planes de pérdida de peso al proporcionar saciedad y mantener la masa muscular.', 
+     '- Versatilidad: Pueden ser mezcladas con líquidos, agregadas a batidos o utilizadas en recetas.'], []).
+
+% Template sobre cómo incorporar proteínas en polvo en la dieta
+template([como, incorporar, proteinas, en, polvo, en, la, dieta], 
+    ['Incorporar proteínas en polvo en la dieta se puede hacer de varias maneras:', 
+     '- Batidos: Mezcla proteínas en polvo con agua, leche o bebidas vegetales para hacer batidos.', 
+     '- Yogur o avena: Agrega proteínas en polvo a yogur, avena o postres para aumentar la ingesta proteica.', 
+     '- Recetas: Integra proteínas en polvo en recetas de panqueques, muffins u otros platillos.', 
+     '- Post-entrenamiento: Consume proteínas en polvo después del entrenamiento para apoyar la recuperación muscular.'], []).
+
+
 
 template(_, ['Por favor', explicate, un, poco, mas, no, te, entiendo,'.'], []). 
 
