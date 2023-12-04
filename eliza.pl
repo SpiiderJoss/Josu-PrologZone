@@ -199,6 +199,97 @@ template([como, incorporar, proteinas, en, polvo, en, la, dieta],
      '- Recetas: Integra proteínas en polvo en recetas de panqueques, muffins u otros platillos.', 
      '- Post-entrenamiento: Consume proteínas en polvo después del entrenamiento para apoyar la recuperación muscular.'], []).
 
+% Template sobre qué es la creatina
+template([que, es, la, creatina], 
+    ['La creatina es un compuesto natural que se encuentra en pequeñas cantidades en alimentos como la carne y el pescado.', 
+     'Se ha demostrado que es segura y efectiva como suplemento dietético.', 
+     'La creatina es conocida por mejorar el rendimiento físico y aumentar la masa muscular.'], []).
+
+% Template sobre los beneficios de la creatina
+template([beneficios, de, la, creatina], 
+    ['La creatina ofrece varios beneficios en el ámbito del rendimiento y la salud:', 
+     '- Mayor fuerza y potencia: Mejora la capacidad de realizar ejercicios de alta intensidad.', 
+     '- Aumento de la masa muscular: Ayuda a retener agua en las células musculares, lo que puede aumentar el tamaño muscular.', 
+     '- Recuperación muscular: Contribuye a una recuperación más rápida después del ejercicio.', 
+     '- Mejora del rendimiento cognitivo: Algunas investigaciones sugieren beneficios para la función cerebral.'], []).
+
+% Template sobre cómo tomar creatina
+template([como, tomar, creatina], 
+    ['La creatina se puede tomar de diversas formas y dosis:', 
+     '- Fase de carga: Algunas personas optan por una fase de carga tomando dosis más altas durante los primeros días.', 
+     '- Mantenimiento: Después de la fase de carga, se toma una dosis más baja para mantener los niveles de creatina.', 
+     '- Mezcla con líquidos: Puede mezclarse con agua, jugo o batidos de proteínas.', 
+     '- Timing: Puede tomarse antes o después del entrenamiento según preferencias personales.'], []).
+
+% Template sobre consideraciones y efectos secundarios de la creatina
+template([consideraciones, y, efectos, secundarios, de, la, creatina], 
+    ['Aunque la creatina es generalmente segura, es importante tener en cuenta algunas consideraciones:', 
+     '- Hidratación: Aumenta la hidratación ya que puede causar retención de agua en las células musculares.', 
+     '- Consulta médica: Consulta con un profesional de la salud antes de tomar creatina, especialmente si tienes condiciones médicas preexistentes.', 
+     '- Dosis adecuada: Sigue las recomendaciones de dosificación para evitar efectos secundarios.', 
+     '- Ciclos de descanso: Algunas personas optan por hacer ciclos de descanso para reducir la dependencia del suplemento.'], []).
+
+% Template sobre qué son los suplementos pre-entrenamiento
+template([que, son, los, suplementos, preentrenamiento], 
+    ['Los suplementos pre-entrenamiento son productos diseñados para ser consumidos antes del ejercicio físico con el objetivo de mejorar el rendimiento.', 
+     'Suelen contener ingredientes como cafeína, aminoácidos, beta-alanina y otros compuestos que pueden proporcionar energía y mejorar la resistencia.'], []).
+
+% Template sobre ingredientes comunes en suplementos pre-entrenamiento
+template([cuales,son, los, ingredientes, comunes, en, los,pre,entreno], 
+    ['Los suplementos pre-entrenamiento pueden incluir varios ingredientes comunes:', 
+     '- Cafeína: Estimula el sistema nervioso central y mejora la alerta y la energía.', 
+     '- Aminoácidos: Ayudan en la síntesis de proteínas y pueden mejorar la resistencia.', 
+     '- Beta-alanina: Contribuye a reducir la fatiga muscular durante el ejercicio intenso.', 
+     '- Oxido nítrico: Mejora el flujo sanguíneo y la entrega de oxígeno a los músculos.'], []).
+
+% Template sobre cómo utilizar los suplementos pre-entrenamiento de manera efectiva
+template([como, utilizar, un,pre,entreno], 
+    ['Para utilizar de manera efectiva los suplementos pre-entrenamiento:', 
+     '- Lee las indicaciones: Sigue las recomendaciones de dosificación y uso del fabricante.', 
+     '- Ajusta según tolerancia: Algunas personas pueden ser más sensibles a ciertos ingredientes, ajusta la dosis según tu tolerancia.', 
+     '- Timing: Consume el suplemento aproximadamente 30-60 minutos antes del entrenamiento para permitir la absorción.', 
+     '- Evita excesos: No combines múltiples fuentes de estimulantes y evita el consumo excesivo para prevenir efectos secundarios.'], []).
+
+% Template sobre consideraciones antes de tomar suplementos pre-entrenamiento
+template([consideraciones, antes, de, tomar, pre,entreno], 
+    ['Antes de tomar suplementos pre-entrenamiento, ten en cuenta algunas consideraciones:', 
+     '- Consulta médica: Si tienes condiciones médicas preexistentes, consulta con un profesional de la salud antes de tomarlos.', 
+     '- Sensibilidad a estimulantes: Si eres sensible a la cafeína u otros estimulantes, elige productos con baja cantidad o sin ellos.', 
+     '- Descanso y ciclos: Considera periodos de descanso para evitar la dependencia y mantener la sensibilidad a los ingredientes.'], []).
+
+% Template sobre el kit básico del gimnasio
+template([kit, basico, del, gym], 
+    ['El kit básico del gimnasio incluye varios elementos esenciales para un programa de entrenamiento efectivo:', 
+     '- Ropa cómoda y calzado adecuado: Garantiza comodidad y seguridad durante el ejercicio.', 
+     '- Botella de agua: Mantente hidratado durante el entrenamiento.', 
+     '- Toalla: Útil para secarte y mantener la higiene en el gimnasio.', 
+     '- Guantes de levantamiento de pesas: Protegen las manos durante el levantamiento de pesas.', 
+     '- Auriculares: Para disfrutar de música o podcasts que te motiven.', 
+     '- Agenda o aplicación de seguimiento: Registra tus entrenamientos y progreso.'], []).
+
+% Template sobre la importancia de la ropa y calzado adecuado
+template([importancia, de, ropa, y, calzado, adecuado], 
+    ['Usar ropa cómoda y calzado adecuado es crucial para el éxito en el gimnasio:', 
+     '- Comodidad: Ropa adecuada permite movimientos libres y cómodos durante el ejercicio.', 
+     '- Seguridad: Calzado adecuado proporciona soporte y reduce el riesgo de lesiones.', 
+     '- Adecuación al tipo de ejercicio: La elección de la ropa debe adaptarse al tipo de ejercicio que realices.'], []).
+
+% Template sobre cómo elegir guantes de levantamiento de pesas
+template([como, elegir, guantes, de, levantamiento, de, pesas], 
+    ['Al elegir guantes de levantamiento de pesas, considera los siguientes factores:', 
+     '- Ajuste: Deben ajustarse cómodamente sin ser demasiado ajustados o sueltos.', 
+     '- Material: Opta por materiales duraderos y transpirables.', 
+     '- Protección: Deben proporcionar protección para las manos durante el levantamiento de pesas.'], []).
+
+% Template sobre la importancia de la hidratación
+template([importancia, de, la, hidratacion], 
+    ['Mantenerse hidratado es esencial para un rendimiento óptimo en el gimnasio:', 
+     '- Rendimiento: La deshidratación puede afectar negativamente el rendimiento y la resistencia.', 
+     '- Recuperación: La hidratación adecuada facilita la recuperación muscular después del ejercicio.', 
+     '- Salud general: Beber suficiente agua es crucial para la salud en general.'], []).
+
+
+
 
 
 template(_, ['Por favor', explicate, un, poco, mas, no, te, entiendo,'.'], []). 
