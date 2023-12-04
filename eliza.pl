@@ -290,9 +290,7 @@ template([importancia, de, la, hidratacion],
 
 
 
-
-
-template(_, ['Por favor', explicate, un, poco, mas, no, te, entiendo,'.'], []). 
+template(_, ['Por favor explicate un poco mas no te entiendo,'], []). 
 
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Template que proporciona información general sobre el cáncer de próstata
@@ -344,6 +342,97 @@ template([que, puedo, hacer, para, reducir, el, riesgo, de, cancer, de, prostata
           '- Hacer ejercicio regularmente.', 
           '- Evitar el consumo excesivo de alcohol.', 
           '- Dejar de fumar si es un hábito.'], []).
+
+% Template sobre tratamientos del cáncer de próstata
+template([tratamientos, del, cancer, de, prostata], 
+    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente.', 
+     'Algunas opciones de tratamiento incluyen:', 
+     '- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata.', 
+     '- Radioterapia: Utiliza radiación para destruir las células cancerosas.', 
+     '- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer.', 
+     '- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
+     '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado.'], []).
+
+% Template sobre efectos secundarios y manejo durante el tratamiento
+template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
+    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
+     '- Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.', 
+     '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.', 
+     '- Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso.', 
+     '- Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga.', 
+     'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
+
+% Template sobre toma de decisiones y apoyo emocional
+template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
+    ['La toma de decisiones sobre el tratamiento del cáncer de próstata es personal y puede ser difícil. Algunos aspectos a considerar incluyen:', 
+     '- Consulta con profesionales: Habla con tu oncólogo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
+     '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
+     '- Segunda opinión: Si es necesario, considera buscar una segunda opinión médica antes de tomar decisiones importantes.'], []).
+
+% Template sobre tratamientos del cáncer de próstata
+template([tratamientos, del, cancer, de, prostata], 
+    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente.', 
+     'Algunas opciones de tratamiento incluyen:', 
+     '- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata.', 
+     '- Radioterapia: Utiliza radiación para destruir las células cancerosas.', 
+     '- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer.', 
+     '- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
+     '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado.'], []).
+
+% Template sobre efectos secundarios y manejo durante el tratamiento
+template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
+    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
+     '- Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.', 
+     '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.', 
+     '- Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso.', 
+     '- Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga.', 
+     'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
+
+% Template sobre toma de decisiones y apoyo emocional
+template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
+    ['La toma de decisiones sobre el tratamiento del cáncer de próstata es personal y puede ser difícil. Algunos aspectos a considerar incluyen:', 
+     '- Consulta con profesionales: Habla con tu oncólogo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
+     '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
+     '- Segunda opinión: Si es necesario, considera buscar una segunda opinión médica antes de tomar decisiones importantes.'], []).
+
+% Template sobre datos estadísticos del cáncer de próstata
+template([datos, estadisticos, del, cancer, de, prostata], 
+    ['El cáncer de próstata es una enfermedad común en los hombres, y las estadísticas proporcionan una visión de su impacto:', 
+     'Según datos recientes:', 
+     '- Incidencia: El cáncer de próstata es uno de los cánceres más diagnosticados en hombres a nivel mundial.', 
+     '- Factores de riesgo: La incidencia aumenta con la edad, y se observa una mayor prevalencia en hombres de raza negra.', 
+     '- Supervivencia: Las tasas de supervivencia son altas, especialmente cuando el cáncer se detecta y trata en sus etapas tempranas.'], []).
+
+% Template sobre la importancia de la detección temprana
+template([importancia, deteccion, temprana, datos, estadisticos, cancer, prostata], 
+    ['La detección temprana del cáncer de próstata juega un papel clave en las tasas de supervivencia y el éxito del tratamiento.', 
+     'Las pruebas de detección, como el PSA (antígeno prostático específico), pueden ayudar a identificar la enfermedad en etapas tempranas cuando las opciones de tratamiento son más efectivas.'], []).
+
+% Template sobre variabilidad en las tasas de incidencia
+template([variabilidad, tasas, incidencia, cancer, prostata], 
+    ['Es importante destacar que las tasas de incidencia del cáncer de próstata pueden variar según la región geográfica y los grupos étnicos.', 
+     'Factores genéticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
+
+% Hechos que definen síntomas y factores de riesgo
+sintoma(dificultad_para_orinar).
+sintoma(aumento_frecuencia_miccion).
+sintoma(dolor_o_molestia_al_orinar).
+sintoma(sangre_en_orina_o_semen).
+sintoma(dolor_en_baja_espalda_o_pelvis).
+
+factor_riesgo(edad_mayor_de_50).
+factor_riesgo(antecedentes_familiares).
+factor_riesgo(ascendencia_afrodescendiente).
+
+% Reglas para detectar posibles síntomas y factores de riesgo
+posible_cancer_prostata :- sintoma(dificultad_para_orinar), sintoma(aumento_frecuencia_miccion).
+posible_cancer_prostata :- sintoma(dolor_o_molestia_al_orinar), sintoma(sangre_en_orina_o_semen).
+posible_cancer_prostata :- sintoma(dolor_en_baja_espalda_o_pelvis).
+
+posible_cancer_prostata :- factor_riesgo(edad_mayor_de_50), factor_riesgo(antecedentes_familiares).
+posible_cancer_prostata :- factor_riesgo(ascendencia_afrodescendiente).
+
+
 
 
 % Lo que le gusta a arnold : flagLike
