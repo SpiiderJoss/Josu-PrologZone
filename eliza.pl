@@ -343,24 +343,24 @@ template([que, puedo, hacer, para, reducir, el, riesgo, de, cancer, de, prostata
           '- Evitar el consumo excesivo de alcohol.', 
           '- Dejar de fumar si es un hábito.'], []).
 
-% Template sobre tratamientos del cáncer de próstata
+% Template sobre tratamientos del cáncer de prostata
 template([tratamientos, del, cancer, de, prostata], 
-    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente.', 
-     'Algunas opciones de tratamiento incluyen:', 
-     '- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata.', 
-     '- Radioterapia: Utiliza radiación para destruir las células cancerosas.', 
-     '- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer.', 
-     '- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
-     '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado.'], []).
+    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente 
+     Algunas opciones de tratamiento incluyen:
+     1.- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata
+     2.- Radioterapia: Utiliza radiación para destruir las células cancerosas
+     3.- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer
+     4.- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo
+     5.- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado'], []).
 
 % Template sobre efectos secundarios y manejo durante el tratamiento
 template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
-    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
-     '- Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.', 
-     '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.', 
-     '- Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso.', 
-     '- Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga.', 
-     'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
+    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:
+     - Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.
+     - Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.
+     - Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso. 
+     - Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga 
+     El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
 
 % Template sobre toma de decisiones y apoyo emocional
 template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
@@ -448,7 +448,7 @@ likes(computadoras).
 likes(carros).
 likes(chochos).
 likes(pesas).
-likes(proteínas).
+likes(proteinas).
 likes(entrenamientos_de_alta_intensidad).
 likes(yoga).
 likes(batidos_proteicos).
@@ -458,7 +458,7 @@ likes(rutinas_de_fuerza).
 likes(boxeo).
 likes(zapatillas_deportivas).
 likes(clases_de_zumba).
-likes(montañismo).
+likes(trepar).
 likes(pilates).
 likes(suplementos_pre_entrenamiento).
 likes(caminatas_por_la_playa).
@@ -479,18 +479,18 @@ hace(escucha_musica).
 hace(va_al_Gym).
 hace(dieta).
 hace(juega_VideoJuegos).
-hace(natación).
+hace(natacion).
 hace(clases_de_spinning).
 hace(pesas_rusas).
 hace(entrenamiento_funcional).
 hace(yoga_en_el_gym).
 hace(toma_clases_de_crossfit).
 hace(practica_pilates).
-hace(usa_máquinas_de_cardio).
+hace(usa_maquinas_de_cardio).
 hace(hace_ejercicios_de_estiramiento).
 hace(participa_en_competencias_de_levantamiento_de_pesas).
 hace(aprende_nuevas_rutinas_de_entrenamiento).
-hace(utiliza_bandas_elásticas_en_sus_entrenamientos).
+hace(utiliza_bandas_elasticas_en_sus_entrenamientos).
 hace(entrena_con_un_entrenador_personal).
 hace(practica_artes_marciales).
 hace(organiza_clases_grupales_de_entrenamiento).
