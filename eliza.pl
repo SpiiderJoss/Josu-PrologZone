@@ -447,6 +447,22 @@ likes(manzanas).
 likes(computadoras).
 likes(carros).
 likes(chochos).
+likes(pesas).
+likes(proteínas).
+likes(entrenamientos_de_alta_intensidad).
+likes(yoga).
+likes(batidos_proteicos).
+likes(correr_en_cinta).
+likes(culturismo).
+likes(rutinas_de_fuerza).
+likes(boxeo).
+likes(zapatillas_deportivas).
+likes(clases_de_zumba).
+likes(montañismo).
+likes(pilates).
+likes(suplementos_pre_entrenamiento).
+likes(caminatas_por_la_playa).
+
 
 
 % lo que hace arnold: flagDo
@@ -459,10 +475,26 @@ hace(lee).
 hace(juega).
 hace(corre).
 hace(pinta).
-hace(escuchaMusica).
-hace(vaAlGym).
+hace(escucha_musica).
+hace(va_al_Gym).
 hace(dieta).
-hace(juegaVideoJuegos).
+hace(juega_VideoJuegos).
+hace(natación).
+hace(clases_de_spinning).
+hace(pesas_rusas).
+hace(entrenamiento_funcional).
+hace(yoga_en_el_gym).
+hace(toma_clases_de_crossfit).
+hace(practica_pilates).
+hace(usa_máquinas_de_cardio).
+hace(hace_ejercicios_de_estiramiento).
+hace(participa_en_competencias_de_levantamiento_de_pesas).
+hace(aprende_nuevas_rutinas_de_entrenamiento).
+hace(utiliza_bandas_elásticas_en_sus_entrenamientos).
+hace(entrena_con_un_entrenador_personal).
+hace(practica_artes_marciales).
+hace(organiza_clases_grupales_de_entrenamiento).
+
 
 
 % lo que es arnold: flagIs
@@ -498,6 +530,8 @@ conoce(gym).
 conoce(rutinas).
 conoce(ejercicios).
 conoce(alimentacion).
+conoce(cancer_de_prostata).
+conoce(tratamientos_del_cancer_de_prostata).
 
 
 
