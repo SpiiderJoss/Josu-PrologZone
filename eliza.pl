@@ -35,6 +35,8 @@ template([yo, soy, s(_),'.'], [porque, eres, tu, 0, '?'], [2]).
 template([te, gustan, las, s(_), _], [flagLike], [3]).
 template([te, gustan, los, s(_), _], [flagLike], [3]).
 
+% template saber que conoce
+template([conoces, sobre,el, s(_), _], [flagConoce], [3]).
 
 % pregunta algo que es Arnold
 template([que, eres, tu, s(_)], [flagIs], [2]).
@@ -66,21 +68,67 @@ template([que, debo, comer, antes, de, hacer, ejercicio],
          ['Es importante tener una comida equilibrada antes de hacer ejercicio. Puedes considerar comer alimentos ricos en carbohidratos y proteinas.', dieta_antes_ejercicio], []).
 
 template([como, puedo, mantenerme, motivado, para, hacer, ejercicio],
-         ['Mantenerse motivado para hacer ejercicio puede ser un desafio, pero aqui hay algunos consejos:', mantener_motivacion], []).
+         ['Mantenerse',motivado,puede,ser,un,desafio.para,ello,te,recomiendo,:,], []).
 
 template([cuanto, tiempo, debo, descansar, entre, series],
-         ['El tiempo de descanso entre series puede variar, pero generalmente se recomienda descansar de 30 segundos a 1 minuto. Sin embargo, esto depende de tus objetivos y nivel de entrenamiento.'], []).
+         ['El', tiempo, de, descanso, entre, series, puede, variar, pero ,generalmente ,se, recomienda, descansar, de, 30, segundos, a, 1, minuto, sin, embargo, esto, depende, de, tus, objetivos, y, nivel, de, entrenamiento], []).
 
 template([que, ejercicios, son, buenos, para, trabajar, s(_)],
          ['Hay varios ejercicios efectivos para trabajar', s(_), '. Algunos de ellos incluyen:', ejercicios_recomendados], [6]).
 
 template(_, ['Por favor', explicate, un, poco, mas, no, te, entiendo,'.'], []). 
 
-% rutinas
-rutina(fuerza,['Para ganar fuerza metele pesado skinny bitch']).
-rutina(principiantes, ['Para principiantes, se recomienda comenzar con una rutina de cuerpo completo 2-3 veces por semana. Incluye ejercicios como flexiones, sentadillas, y levantamiento de pesas ligeras.']).
-rutina(intermedios, ['Los intermedios pueden realizar una combinación de entrenamiento de fuerza y cardio. Considera dividir tus días entre partes superiores e inferiores y agregar ejercicios más avanzados.']).
-rutina(avanzados, ['Para aquellos en un nivel avanzado, puedes incorporar rutinas de entrenamiento más especializadas, como entrenamiento de fuerza focalizado o entrenamiento de alta intensidad (HIIT). Asegúrate de incluir suficiente variedad.']).
+% ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+% Template que proporciona información general sobre el cáncer de próstata
+template([que, es, el, cancer, de, prostata], 
+         ['El cáncer de próstata es un tipo de cáncer que se desarrolla en la próstata, una glándula del sistema reproductor masculino.', 
+          'La próstata es responsable de producir parte del líquido seminal que protege y nutre a los espermatozoides.', 
+          'El cáncer de próstata es uno de los cánceres más comunes en los hombres.'], []).
+
+% Template que aborda la prevalencia del cáncer de próstata
+template([cuantas, personas, tienen, cancer, de, prostata], 
+         ['El cáncer de próstata es bastante común y afecta a un gran número de hombres en todo el mundo.', 
+          'La incidencia aumenta con la edad, y se estima que la mayoría de los casos se diagnostican en hombres mayores de 65 años.'], []).
+
+% Template sobre los factores de riesgo del cáncer de próstata
+template([cuales, son, los, factores, de, riesgo, del, cancer, de, prostata], 
+         ['Algunos de los factores de riesgo para el cáncer de próstata incluyen:', 
+          '- Edad avanzada.', 
+          '- Antecedentes familiares de cáncer de próstata.', 
+          '- Raza (los hombres afroamericanos tienen un mayor riesgo).', 
+          '- Dieta rica en grasas.'], []).
+
+% Template que destaca la importancia de los exámenes de detección
+template([por, que, es, importante, hacer, examenes, de, deteccion, del, cancer, de, prostata], 
+         ['La detección temprana del cáncer de próstata es crucial para un tratamiento exitoso.', 
+          'Los exámenes de detección, como el análisis de antígeno prostático específico (PSA) y el examen rectal digital (ERD),', 
+          'pueden ayudar a identificar la enfermedad en sus etapas iniciales cuando es más tratable.'], []).
+
+% Template que aborda las opciones de tratamiento para el cáncer de próstata
+template([cuales, son, las, opciones, de, tratamiento, del, cancer, de, prostata], 
+         ['Las opciones de tratamiento para el cáncer de próstata pueden incluir:', 
+          '- Cirugía para extirpar la próstata.', 
+          '- Radioterapia para destruir las células cancerosas.', 
+          '- Terapia hormonal para reducir los niveles de hormonas que alimentan el cáncer.', 
+          '- Vigilancia activa en casos de cáncer de bajo riesgo.', 
+          'El tratamiento específico dependerá de la etapa y la agresividad del cáncer.'], []).
+
+% Template que ofrece apoyo emocional a los pacientes
+template([como, lidiar, emocionalmente, con, el, cancer, de, prostata], 
+         ['Recibir un diagnóstico de cáncer de próstata puede ser emocionalmente desafiante.', 
+          'Es importante buscar apoyo emocional de amigos, familiares o profesionales de la salud mental.', 
+          'La participación en grupos de apoyo también puede ser beneficioso para compartir experiencias con otros afectados.'], []).
+
+% Template que resalta la importancia del estilo de vida saludable
+template([que, puedo, hacer, para, reducir, el, riesgo, de, cancer, de, prostata], 
+         ['Adoptar un estilo de vida saludable puede ayudar a reducir el riesgo de desarrollar cáncer de próstata.', 
+          'Algunas recomendaciones incluyen:', 
+          '- Mantener una dieta equilibrada y baja en grasas.', 
+          '- Mantener un peso corporal saludable.', 
+          '- Hacer ejercicio regularmente.', 
+          '- Evitar el consumo excesivo de alcohol.', 
+          '- Dejar de fumar si es un hábito.'], []).
+
 
 % Lo que le gusta a arnold : flagLike
 arnoldLikes(X, R):- likes(X), R = ['Si', me, gustan, los, X].
@@ -93,8 +141,8 @@ likes(zombies).
 likes(manzanas).
 likes(computadoras).
 likes(carros).
-likes(drogas).
 likes(chochos).
+
 
 % lo que hace arnold: flagDo
 arnoldHace(X, R):- hace(X), R = ['Si', yo, X, y, me, encanta].
@@ -113,8 +161,8 @@ hace(juegaVideoJuegos).
 
 
 % lo que es arnold: flagIs
-arnoldEs(X, R):- is0(X), R = ['Si', yo, soy, X].
-arnoldEs(X, R):- \+is0(X), R = ['No', yo, no, soy, X].
+arnoldEs(X, R):- es0(X), R = ['Si', yo, soy, X].
+arnoldEs(X, R):- \+es0(X), R = ['No', yo, no, soy, X].
 es0(tonto).
 es0(raro).
 es0(bueno).
@@ -135,6 +183,18 @@ es0(introvertido).
 es0(optimista).
 es0(pesimista).
 
+% arnold conoce cancer de prostata: flagConoce
+arnoldConoce(X, R):- conoce(X), R = ['Si', conozco, sobre, X].
+arnoldConoce(X, R):- conoce(X), R = ['Si', conozco, sobre,el, X].
+arnoldConoce(X, R):- \+conoce(X), R = ['No', no, conozco,sobre, X].
+arnoldConoce(X, R):- \+conoce(X), R = ['No', no, conozco,sobre,el, X].
+conoce(cancer).
+conoce(gym).
+conoce(rutinas).
+conoce(ejercicios).
+conoce(alimentacion).
+
+
 
 match([],[]).
 match([], _):- true.
@@ -151,26 +211,33 @@ match([S|Stim],[_|Input]) :-
 
 replace0([], _, _, Resp, R):- append(Resp, [], R),!.
 
-% Eliza likes:
+% arnold likes:
 replace0([I|_], Input, _, Resp, R):-
     nth0(I, Input, Atom),
     nth0(0, Resp, X),
     X == flagLike,
     arnoldLikes(Atom, R).
 
-% Eliza does:
+% Arnold does:
 replace0([I|_], Input, _, Resp, R):-
     nth0(I, Input, Atom),
     nth0(0, Resp, X),
     X == flagDo,
     arnoldDoes(Atom, R).
 
-% Eliza is:
+% Arnold is:
 replace0([I|_], Input, _, Resp, R):-
     nth0(I, Input, Atom),
     nth0(0, Resp, X),
     X == flagIs,
         arnoldIs(Atom, R).
+
+% Arnold Conoce:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    X == flagConoce,
+    arnoldConoce(Atom, R).
 
 replace0([I|Index], Input, N, Resp, R):-
     length(Index, M), M =:= 0,
