@@ -22,10 +22,14 @@ arnold(Input) :-
     readln(Input1),
     arnold(Input1), !.
 
-template([alumno, _], ['Josue Montalvan Zavala'],[]).
+template([alumno], ['Josue Montalvan Zavala el guapo'],[]).
 
 template([hola, mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [4]).
 template([buendia, mi, nombre, es, s(_), '.'], ['buen dia', 'Como', estas, tu, 0, '?'], [4]).
+
+template([quien,me,va,a,partir,la,madre], ['El profe'], []).
+template([porque,el,profe,tiene,tanta,gente,en,el,cubiculo], ['NO TENGO IDEA! NO SE DE DONDE SALIO TANTA GENTE'], []).
+template([por,que,el,profe,tiene,tanta,gente,en,su,cubiculo], ['NO TENGO IDEA! NO SE DE DONDE SALIO TANTA GENTE'], []).
 
 template([hola, ',', mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [5]).
 template([buendia, ',', mi, nombre, es, s(_), '.'], ['Buendia', 'Como', estas, tu, 0, '?'], [5]).
