@@ -1,4 +1,0 @@
-(defun factorial(x)
-
-
-)
