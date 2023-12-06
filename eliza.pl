@@ -18,6 +18,8 @@ arnold(Input) :-
     readln(Input1),
     arnold(Input1), !.
 
+template([alumno, _], ['Josue Montalvan Zavala'],[]).
+
 template([hola, mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [4]).
 template([buendia, mi, nombre, es, s(_), '.'], ['buen dia', 'Como', estas, tu, 0, '?'], [4]).
 
@@ -293,7 +295,19 @@ template([importancia, de, la, hidratacion],
 template(_, ['Por favor explicate un poco mas no te entiendo,'], []). 
 
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-% Template que proporciona información general sobre el cáncer de próstata
+% Templates cancer de prostata
+
+% Sintomas - cancer prostata
+		template([si, tengo, dolor, de , s(_), es, sintoma, de, cancer,de, prostata, _], [flagSintomas], [4]).
+		template([si, tengo, s(_), es, sintoma, de, cancer,de,prostata, _], [flagSintomas], [3]).
+
+% Soluciones - cancer de prostata
+		template([que, debo, de, tomar, si, tengo, dolor, al, s(_), _], [flagSoluciones], [8]).
+		template([tengo, dolor, al, s(_)], [flagSoluciones], [3]).
+		template([tengo, un, s(_)], [flagSoluciones], [3]).
+		template([tengo, s(_)], [flagSoluciones], [1]).
+
+
 template([que, es, el, cancer, de, prostata], 
          ['El cáncer de próstata es un tipo de cáncer que se desarrolla en la próstata, una glándula del sistema reproductor masculino.', 
           'La próstata es responsable de producir parte del líquido seminal que protege y nutre a los espermatozoides.', 
@@ -414,24 +428,52 @@ template([variabilidad, tasas, incidencia, cancer, prostata],
      'Factores genéticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
 
 % Hechos que definen síntomas y factores de riesgo
-sintoma(dificultad_para_orinar).
-sintoma(aumento_frecuencia_miccion).
-sintoma(dolor_o_molestia_al_orinar).
-sintoma(sangre_en_orina_o_semen).
-sintoma(dolor_en_baja_espalda_o_pelvis).
+% Sintomas
+		elizaSintomas(X, R) :-
+			sintomas(X),
+			(
+				X = dificultad_al_orinar, R = ['Sí, la dificultad al orinar es sintoma de cancer de prostata'];
+				X = orina_interrumpida, R = ['Sí, la orina interrumpida es sintoma de cancer de prostata'];
+				X = miccion, R = ['Sí, la micción frecuente puede ser un síntoma de la cancer de prostata.'];
+				X = ardor_al_orinar, R = ['Sí, el ardor al orinar es sintoma de cancer de prostata'];
+				X = sangre_en_orina, R = ['Sí, la sangre en la orina o semen es sintoma de cancer de prostata'];
+				X = dolor_en_espalda, R = ['Sí, el dolor en la espalda es sintoma de cancer de prostata'];
+				X = dolor_al_eyacular, R = ['Sí, el dolor al eyacular es sintoma de cancer de prostata'];	
+				R = ['Sí, el dolor de', X, 'puede ser un síntoma de cancer de prostata']
+			).
 
-factor_riesgo(edad_mayor_de_50).
-factor_riesgo(antecedentes_familiares).
-factor_riesgo(ascendencia_afrodescendiente).
+		elizaSintomas(X, R):- \+sintomas(X), R = [al, parecer, el, sintoma, X , no, es, sintoma, de, cancer,de , prostata].
 
-% Reglas para detectar posibles síntomas y factores de riesgo
-posible_cancer_prostata :- sintoma(dificultad_para_orinar), sintoma(aumento_frecuencia_miccion).
-posible_cancer_prostata :- sintoma(dolor_o_molestia_al_orinar), sintoma(sangre_en_orina_o_semen).
-posible_cancer_prostata :- sintoma(dolor_en_baja_espalda_o_pelvis).
+        sintomas(dificultad_al_orinar).
+		sintomas(orina_interrumpida).
+		sintomas(miccion).
+		sintomas(ardor_al_orinar).
+		sintomas(sangre_en_orina).
+		sintomas(dolor_en_espalda).
+		sintomas(dolor_al_eyacular).
 
-posible_cancer_prostata :- factor_riesgo(edad_mayor_de_50), factor_riesgo(antecedentes_familiares).
-posible_cancer_prostata :- factor_riesgo(ascendencia_afrodescendiente).
+% --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+        % Soluciones 
+
+		elizaSoluciones(X, R) :-
+			soluciones(X),
+			(
+				X = orinar, R = ['Para el dolor al orinar, debes de tomar Trimetoprima y sulfametoxazol o Fosfomicina (Monurol)'];
+                X = miccion, R=['Para la miccion debes tomar: Tolterodina , Oxibutinina, que puede tomarse en forma de pastilla (Ditropan XL) o usarse como parche para la piel (Oxytrol) o gel (Gelnique)'];
+                X = dolor, R=['Para el dolor o ardor al orinar, dolor al eyacular o dolor de pelvis persistente, debes tomar, Trimetoprima y sulfametoxazol (Bactrim, Bactrim DS) o Fosfomicina (Monurol)'];
+
+				R = ['Puede que tengas un dolor de', X, ' no sabemos con exactitud que sea, pero recomendamos visitar un doctor para su profundo analisis.']
+			).
+
+		elizaSoluciones(X, R):- \+soluciones(X), R = ['No tengo conocimiento al sintoma de dolor de ', X ].
+
+		soluciones(estomago).
+        soluciones(miccion).
+        soluciones(dolor).
+
+		
+		
 
 
 
@@ -579,6 +621,14 @@ replace0([I|_], Input, _, Resp, R):-
     X == flagConoce,
     arnoldConoce(Atom, R).
 
+% Arnold Sintomas:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    X == flagSintomas,
+    elizaSintomas(Atom, R).
+
+
 replace0([I|Index], Input, N, Resp, R):-
     length(Index, M), M =:= 0,
     nth0(I, Input, Atom),
@@ -590,3 +640,10 @@ replace0([I|Index], Input, N, Resp, R):-
     select(N, Resp, Atom, R1),
     N1 is N + 1,
     replace0(Index, Input, N1, R1, R),!.
+
+% Eliza Soluciones:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    X == flagSoluciones,
+    elizaSoluciones(Atom, R).
