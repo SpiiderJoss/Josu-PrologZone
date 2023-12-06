@@ -6,6 +6,10 @@ arnold:- writeln('Hola , mi nombre es  Arnold tu chatbot del gym,
     arnold(Input),!.
 arnold(Input):- Input == ['adios'],
     writeln('Adios. espero haber sido de ayuda.'), !.
+    arnold(Input):- Input == ['Adios'],
+    writeln('Adios. espero haber sido de ayuda.'), !.
+    arnold(Input):- Input == ['Adios'],
+    writeln('Adios. espero haber sido de ayuda.'), !.
 arnold(Input):- Input == ['Adios', '.'],
     writeln('Adios. espero haber sido de ayuda.'), !.
 arnold(Input) :-
@@ -49,7 +53,6 @@ template([como, estas, tu, '?'], [yo, estoy, bien, ',', gracias, por, preguntar,
 template([yo, pienso, que, _], [bueno, esa, es, tu, opinion], []).
 template([porque, _], [esa, no, es, una, buena, razon, '.'], []).
 template([tengo, un, problema, con, s(_), y, s(_), '.'], ['Tienes', que, lidiar, con, 0, y, 1, de, una, manera, madura, '.'], [4, 6]).
-template([tengo, s(_),  _], [puedo, recomendarte, un, libro, sobre, ese, tema], []).
 template([por, favor, s(_), _], ['No', puedo, ayudarte, ',', solo, soy, una, maquina], []).
 template([dime, un, s(_), _], ['No', puedo, ',', no, soy, bueno, en, eso], []).
 template([cual, es, el , mejor, chocolate, del, mundo],['El', mejor, chocolate, del, mundo, es, el , que,te,guste,a,ti], []).
@@ -330,17 +333,95 @@ template([importancia, de, la, hidratacion],
      '- Recuperacion: La hidratacion adecuada facilita la recuperacion muscular despues del ejercicio.', 
      '- Salud general: Beber suficiente agua es crucial para la salud en general.'], []).
 
+     % Template para una dieta para ganar masa muscular
+template([dame, una, dieta, para, ganar, masa, muscular], 
+    ['¡Claro! Aquí tienes una dieta diseñada para ayudarte a ganar masa muscular:',
+     '- Desayuno:',
+     '  - 4 claras de huevo revueltas con espinacas',
+     '  - Avena cocida con plátano y almendras',
+     '- Snack a Media Mañana:',
+     '  - Yogur griego natural con frutas y nueces',
+     '- Almuerzo:',
+     '  - Pechuga de pollo a la parrilla',
+     '  - Quinoa o arroz integral',
+     '  - Brócoli al vapor',
+     '- Merienda de la Tarde:',
+     '  - Batido de proteínas con leche y plátano',
+     '  - Pan integral con aguacate',
+     '- Cena:',
+     '  - Salmón al horno',
+     '  - Batata asada',
+     '  - Espárragos salteados',
+     '- Snack Nocturno:',
+     '  - Queso cottage con piña o uvas',
+     'Recuerda ajustar las porciones según tus necesidades calóricas y beber suficiente agua durante el día. Consulta con un nutricionista para personalizarla según tu situación específica. ¡Buena alimentación!'], []).
+
+% Template para una dieta para bajar grasa
+template([dame, una, dieta, para, bajar, grasa], 
+    ['¡Claro! Aquí tienes una dieta diseñada para ayudarte a reducir grasa corporal:',
+     '- Desayuno:',
+     '  - Batido de proteínas con leche y frutas (por ejemplo, fresas o arándanos)',
+     '  - Tostadas integrales con aguacate',
+     '- Snack a Media Mañana:',
+     '  - Yogur griego natural con almendras y un toque de miel',
+     '- Almuerzo:',
+     '  - Ensalada de pollo a la parrilla con verduras mixtas y aderezo de vinagreta',
+     '  - Quinoa cocida',
+     '- Merienda de la Tarde:',
+     '  - Rodajas de pepino con hummus',
+     '- Cena:',
+     '  - Salmón al horno con limón y hierbas',
+     '  - Espárragos asados',
+     '  - Batata al horno',
+     '- Snack Nocturno:',
+     '  - Té verde con unas nueces',
+     'Recuerda ajustar las porciones según tus necesidades calóricas y mantener la hidratación. Consulta con un nutricionista para adaptarla a tus requerimientos específicos. ¡Buena alimentación!'], []).
+
+% Template para consejos sobre cómo ponerse fuerte
+template([como, hago, para, ponerme, fuerte], 
+    ['¡Claro! Aquí tienes algunos consejos para ayudarte a poner en marcha tu camino para ponerte fuerte:',
+     '- Plan de Entrenamiento:',
+     '  - Diseña un plan de entrenamiento que incluya ejercicios compuestos como sentadillas, press de banca y peso muerto.',
+     '  - Incrementa gradualmente la carga y la intensidad para desafiar tus músculos y fomentar el crecimiento.',
+     '- Nutrición:',
+     '  - Consume una dieta rica en proteínas para apoyar la reparación y el crecimiento muscular.',
+     '  - Incluye carbohidratos y grasas saludables para proporcionar energía durante tus entrenamientos.',
+     '- Descanso y Recuperación:',
+     '  - Dale a tu cuerpo tiempo para recuperarse. El descanso es crucial para el crecimiento muscular.',
+     '  - Asegúrate de dormir lo suficiente para favorecer la recuperación y el rendimiento.',
+     '- Hidratación:',
+     '  - Mantente bien hidratado para apoyar funciones corporales óptimas, incluido el rendimiento físico.',
+     '  - Bebe agua antes, durante y después de tus entrenamientos.',
+     '- Consistencia:',
+     '  - La consistencia es clave. Mantén un enfoque constante en tu plan de entrenamiento y nutrición.',
+     'Recuerda que la progresión gradual y la paciencia son esenciales. Consulta con un entrenador personal o profesional de la salud para obtener orientación personalizada. ¡Buena suerte en tu viaje para ponerte fuerte!'], []).
+
+% Template para responder a la pregunta sobre cuándo se ven resultados en el gimnasio
+template([a, los, cuantos, meses, veo, resultados, en, el, gym], 
+    ['La rapidez con la que se ven resultados en el gimnasio puede variar según diversos factores, como tu dedicación, genética y programa de entrenamiento.', 
+     'Sin embargo, en términos generales, algunos cambios pueden empezar a notarse en un plazo de 2 a 3 meses si mantienes una rutina constante y una nutrición adecuada.', 
+     'Es importante ser paciente y no desanimarse, ya que la transformación física lleva tiempo.', 
+     'Recuerda ajustar tu programa de entrenamiento y nutrición según tus metas y necesidades específicas.'], []).
+
+% Template para responder a la pregunta sobre cuándo se ven resultados del gimnasio
+template([a, los, cuantos, meses, veo, resultados, del, gym], 
+    ['La velocidad a la que se ven resultados del gimnasio puede variar según varios factores, como la consistencia en el entrenamiento, la dieta y la genética individual.', 
+     'En términos generales, algunos cambios pueden comenzar a notarse en un plazo de 2 a 3 meses con un compromiso constante.', 
+     'Sin embargo, la transformación física significativa a menudo lleva más tiempo, y es crucial mantener la paciencia y la motivación a lo largo del proceso.', 
+     'Recuerda ajustar tu rutina de ejercicios y dieta según tus objetivos específicos y busca asesoramiento profesional si es necesario.'], []).
+
+
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Templates cancer de prostata
 
 % Sintomas - cancer prostata
 		template([si, tengo, dolor, de , s(_), es, sintoma, de, cancer,de, prostata, _], [flagSintomas], [4]).
-		template([si, tengo, s(_), es, sintoma, de, cancer,de,prostata, _], [flagSintomas], [3]).
+		template([si, tengo, s(_), es, sintoma, de, cancer,de,prostata, _], [flagSintomas], [2]).
 
 % Soluciones - cancer de prostata
 		template([que, debo, de, tomar, si, tengo, dolor, al, s(_), _], [flagSoluciones], [8]).
 		template([tengo, dolor, al, s(_)], [flagSoluciones], [3]).
-		template([tengo, un, s(_)], [flagSoluciones], [3]).
+		template([tengo, un, s(_)], [flagSoluciones], [2]).
 		template([tengo, s(_)], [flagSoluciones], [1]).
 
 template([que,se,hace,para,el,mal,de,amores], 
@@ -437,10 +518,12 @@ elizaSintomas(X, R) :-
     (
         X = dificultad_al_orinar, R = ['Si, la dificultad al orinar es sintoma de cancer de prostata'];
         X = orina_interrumpida, R = ['Si, la orina interrumpida es sintoma de cancer de prostata'];
+        X = la_orina_interrumpida, R = ['Si, la orina interrumpida es sintoma de cancer de prostata'];
         X = miccion, R = ['Si, la miccion frecuente puede ser un sintoma de la cancer de prostata.'];
         X = ardor_al_orinar, R = ['Si, el ardor al orinar es sintoma de cancer de prostata'];
         X = sangre_en_orina, R = ['Si, la sangre en la orina o semen es sintoma de cancer de prostata'];
-        X = dolor_en_espalda, R = ['Si, el dolor en la espalda es sintoma de cancer de prostata'];
+        X = sangre_en_la_orina, R = ['Si, la sangre en la orina o semen es sintoma de cancer de prostata'];
+        X = dolor_en_la_espalda, R = ['Solo si el dolor es muy frecuente, hay una posibilidad de que sea sintoma de cancer de prostata'];
         X = dolor_al_eyacular, R = ['Si, el dolor al eyacular es sintoma de cancer de prostata'];    
         R = ['Si, el dolor de', X, 'puede ser un sintoma de cancer de prostata']
     ).
@@ -450,10 +533,13 @@ elizaSintomas(X, R) :-
 
         sintomas(dificultad_al_orinar).
 		sintomas(orina_interrumpida).
+        sintomas(la_orina_interrumpida).
 		sintomas(miccion).
 		sintomas(ardor_al_orinar).
 		sintomas(sangre_en_orina).
+        sintomas(sangre_en_la_orina).
 		sintomas(dolor_en_espalda).
+        sintomas(dolor_en_la_espalda).
 		sintomas(dolor_al_eyacular).
 
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -472,7 +558,7 @@ elizaSintomas(X, R) :-
 
 		elizaSoluciones(X, R):- \+soluciones(X), R = ['No tengo conocimiento al sintoma de dolor de ', X ].
 
-		soluciones(estomago).
+		soluciones(orinar).
         soluciones(miccion).
         soluciones(dolor).
 
