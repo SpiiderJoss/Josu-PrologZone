@@ -1,15 +1,15 @@
-%padre(juan).
-%padre(antonio).
-%padre(luiso).
-%padre(eduardo).
-%madre(luisa).
-%padrede(pedro,juan).
-%padrede(juan,julio).
-%padrede(juan,jose).
-%madrede(luisa,maria).
-%abuelo(X,Y):- padrede(X,W),padrede(W,Y).
+% padre(juan).
+% padre(antonio).
+% padre(luiso).
+% padre(eduardo).
+% madre(luisa).
+% padrede(pedro,juan).
+% padrede(juan,julio).
+% padrede(juan,jose).
+% madrede(luisa,maria).
+% abuelo(X,Y):- padrede(X,W),padrede(W,Y).
 
-%Hijos
+% Hijos
 hijo(josue).
 hijo(fernando).
 hijo(leonardo).
@@ -27,7 +27,7 @@ hijo(daniel).
 hijo(rafaeljr).
 hijo(santiago).
 hijo(dilan).
-%hijas
+% hijas
 hija(ana).
 hija(fernanda).
 hija(anabel).
@@ -45,7 +45,7 @@ hija(noemi).
 hija(margarita).
 hija(juanita).
 hija(merced).
-%padres
+% padres
 padrede(fernando,josue).
 padrede(fernando,fernanda).
 padrede(mises,leonardo).
@@ -73,7 +73,7 @@ padrede(saul,saulito).
 padrede(omar,areli).
 padrede(omar,atziri).
 padrede(omar,elizabeth).
-%Madres
+% Madres
 madrede(anabel,josue).
 madrede(anabel,fernanda).
 madrede(juanita,fernando).
@@ -93,14 +93,14 @@ madrede(margarita,sebastian).
 madrede(merced,santiago).
 madrede(merced,mariel).
 
-%Parejas
+% Parejas
 pareja(fernando,anabel).
 pareja(anabel,fernando).
 pareja(cesar,merced).
 pareja(merced,cesar).
 pareja().
-%Primos 
-%Primos Josue
+% Primos 
+% Primos Josue
 primode(josue,santiago).
 primode(josue,mariel).
 primode(josue,saulito).
@@ -119,11 +119,11 @@ primode(josue,natalia).
 primode(josue,christian).
 primode(josue,dayana).
 primode(josue,sebastian).
-%Primos 
+% Primos 
 
 
-%Primas 
-%primas Fernanda
+% Primas 
+% primas Fernanda
 primode(fernanda,santiago).
 primode(fernanda,mariel).
 primode(fernanda,saulito).
