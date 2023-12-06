@@ -56,8 +56,6 @@ template([cual, es, el , mejor, chocolate, del, mundo],['El', mejor, chocolate, 
 
 % preguntas gym
 template([dime,una,rutina,de,entrenamiento,para,el,gym] ,['Si', pero, dime, enfocado, en, que, ?], []).
-template([dime, una, rutina, de, entrenamiento, para, ganar, s(_)],['Claro', aqui, tienes, una, rutina, de, entrenamiento, recomendada, :, rutina(_)], [7]).
-
 
 % preguntas sobre el gym
 template([me, puedes, recomendar, una, rutina, de, pierna, para, ganar,fuerza], 
@@ -85,6 +83,63 @@ template([me, puedes, recomendar, una, rutina, de, brazos, para, ganar,fuerza],
          Fondos en paralelas: 3 series x 10-12 repeticiones, 
          Tríceps en polea alta: 3 series x 10-12 repeticiones,
          Tríceps en polea con cuerda: 3 series x 10-12 repeticiones'], []).
+
+% Rutina de resistencia
+template([me, puedes, recomendar, una, rutina, de, resistencia,de,cuerpo,completo], 
+    ['Rutina de Resistencia:',
+     'Circuito de Cuerpo Completo:',
+     '1. Saltos de Tijera: 3 series x 1 minuto de trabajo, 30 segundos de descanso',
+     '2. Burpees: 3 series x 1 minuto de trabajo, 30 segundos de descanso',
+     '3. Mountain Climbers: 3 series x 1 minuto de trabajo, 30 segundos de descanso',
+     'Cardio de Alta Intensidad:',
+     'Correr o Saltar la Cuerda: 20 minutos a ritmo constante',
+     'Entrenamiento de Fuerza Funcional:',
+     '1. Flexiones: 3 series x 15-20 repeticiones',
+     '2. Sentadillas Corporales: 3 series x 20 repeticiones',
+     '3. Plancha Frontal: 3 series x 1 minuto de trabajo, 30 segundos de descanso',
+     'Recuerda ajustar la intensidad según tu nivel y progresar gradualmente. ¡Buena suerte!'], []).
+
+% Rutina de pierna para ganar resistencia
+template([rutina,de, pierna,para,ganar, resistencia], 
+    ['Rutina de Pierna para Ganar Resistencia:',
+     '1. Sentadillas: 3 series x 15-20 repeticiones',
+     '2. Zancadas: 3 series x 20 repeticiones (10 cada pierna)',
+     '3. Salto de Caja: 3 series x 15 repeticiones',
+     '4. Elevaciones de Gemelos: 3 series x 25 repeticiones',
+     '5. Saltos Laterales: 3 series x 15 repeticiones (7 cada lado)'], []).
+
+% Rutina de espalda para ganar resistencia
+template([rutina,de, espalda,para,ganar, resistencia], 
+    ['Rutina de Espalda para Ganar Resistencia:',
+     '1. Pull-ups (Dominadas): 4 series x 12-15 repeticiones',
+     '2. Remo con Barra: 3 series x 15-20 repeticiones',
+     '3. Hiperextensiones: 3 series x 20 repeticiones',
+     '4. Pull-over con Mancuerna: 3 series x 15-20 repeticiones'], []).
+
+% Rutina de pecho para ganar resistencia
+template([rutina,de, pecho,para,ganar, resistencia], 
+    ['Rutina de Pecho para Ganar Resistencia:',
+     '1. Flexiones (Push-ups): 4 series x 20-25 repeticiones',
+     '2. Press de Pecho con Mancuernas: 3 series x 15-20 repeticiones',
+     '3. Fondos en Paralelas: 3 series x 20 repeticiones',
+     '4. Pullover con Barra: 3 series x 15-20 repeticiones'], []).
+
+% Rutina de hombro para ganar resistencia
+template([rutina,de, hombro,pra,ganar, resistencia], 
+    ['Rutina de Hombro para Ganar Resistencia:',
+     '1. Press Militar: 3 series x 15-20 repeticiones',
+     '2. Elevaciones Laterales: 3 series x 20-25 repeticiones',
+     '3. Elevaciones Frontales: 3 series x 15-20 repeticiones',
+     '4. Rotaciones con Mancuernas: 3 series x 20 repeticiones (10 cada lado)'], []).
+
+% Rutina de brazos para ganar resistencia
+template([rutina,de, brazos,para,ganar, resistencia], 
+    ['Rutina de Brazos para Ganar Resistencia:',
+     '1. Flexiones Diamante: 3 series x 20-25 repeticiones',
+     '2. Curl con Barra: 3 series x 15-20 repeticiones',
+     '3. Fondos Tríceps en Silla: 3 series x 20 repeticiones',
+     '4. Curl Martillo: 3 series x 15-20 repeticiones',
+     '5. Fondos en Paralelas: 3 series x 20 repeticiones'], []).
 
 template([que,consejos,me,puedes,dar,para,el,gym], 
          ['1.- Realiza calentamiento antes de cada sesion.
@@ -253,7 +308,7 @@ template([kit, basico, del, gym],
      '- Auriculares: Para disfrutar de musica o podcasts que te motiven.', 
      '- Agenda o aplicacion de seguimiento: Registra tus entrenamientos y progreso.'], []).
 
-template([importancia, de, ropa, y, calzado, adecuado], 
+template([importancia, de, ropa, y, calzado, adecuado, en,el,gym], 
     ['Usar ropa comoda y calzado adecuado es crucial para el exito en el gimnasio:', 
      '- Comodidad: Ropa adecuada permite movimientos libres y comodos durante el ejercicio.', 
      '- Seguridad: Calzado adecuado proporciona soporte y reduce el riesgo de lesiones.', 
@@ -270,9 +325,6 @@ template([importancia, de, la, hidratacion],
      '- Rendimiento: La deshidratacion puede afectar negativamente el rendimiento y la resistencia.', 
      '- Recuperacion: La hidratacion adecuada facilita la recuperacion muscular despues del ejercicio.', 
      '- Salud general: Beber suficiente agua es crucial para la salud en general.'], []).
-
-template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
-
 
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Templates cancer de prostata
@@ -332,29 +384,6 @@ template([que, puedo, hacer, para, reducir, el, riesgo, de, cancer, de, prostata
           '- Dejar de fumar si es un habito.'], []).
 
 template([tratamientos, del, cancer, de, prostata], 
-    ['El tratamiento del cancer de prostata puede variar segun el estadio de la enfermedad y la salud general del paciente 
-     Algunas opciones de tratamiento incluyen:
-     1.- Cirugia: La prostatectomia es la extirpacion quirurgica de la prostata
-     2.- Radioterapia: Utiliza radiacion para destruir las celulas cancerosas
-     3.- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cancer
-     4.- Vigilancia activa: Monitorizacion cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo
-     5.- Quimioterapia: Puede ser utilizada en casos avanzados para tratar celulas cancerosas que se han diseminado'], []).
-
-template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
-    ['Es importante tener en cuenta que cada opcion de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:
-     - Cirugia: Puede haber efectos secundarios como incontinencia urinaria o disfuncion erectil.
-     - Radioterapia: Posibles efectos secundarios incluyen fatiga, irritacion de la piel y cambios en la funcion erectil.
-     - Terapia hormonal: Puede causar efectos secundarios como disminucion del deseo sexual y aumento de peso. 
-     - Quimioterapia: Puede provocar nauseas, perdida de cabello y fatiga 
-     El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo medico.'], []).
-
-template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
-    ['La toma de decisiones sobre el tratamiento del cancer de prostata es personal y puede ser dificil. Algunos aspectos a considerar incluyen:', 
-     '- Consulta con profesionales: Habla con tu oncologo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
-     '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
-     '- Segunda opinion: Si es necesario, considera buscar una segunda opinion medica antes de tomar decisiones importantes.'], []).
-
-template([tratamientos, del, cancer, de, prostata], 
     ['El tratamiento del cancer de prostata puede variar segun el estadio de la enfermedad y la salud general del paciente.', 
      'Algunas opciones de tratamiento incluyen:', 
      '- Cirugia: La prostatectomia es la extirpacion quirurgica de la prostata.', 
@@ -363,7 +392,7 @@ template([tratamientos, del, cancer, de, prostata],
      '- Vigilancia activa: Monitorizacion cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
      '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar celulas cancerosas que se han diseminado.'], []).
 
-template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
+template([efectos, secundarios, y, manejo, para,el,tratamiento,de, cancer,de, prostata], 
     ['Es importante tener en cuenta que cada opcion de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
      '- Cirugia: Puede haber efectos secundarios como incontinencia urinaria o disfuncion erectil.', 
      '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritacion de la piel y cambios en la funcion erectil.', 
@@ -371,7 +400,7 @@ template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata],
      '- Quimioterapia: Puede provocar nauseas, perdida de cabello y fatiga.', 
      'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo medico.'], []).
 
-template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
+template([toma, de, decisiones, y, apoyo, emocional,sobre, el, tratamiento, cancer, prostata], 
     ['La toma de decisiones sobre el tratamiento del cancer de prostata es personal y puede ser dificil. Algunos aspectos a considerar incluyen:', 
      '- Consulta con profesionales: Habla con tu oncologo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
      '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
@@ -384,7 +413,7 @@ template([datos, estadisticos, del, cancer, de, prostata],
      '- Factores de riesgo: La incidencia aumenta con la edad, y se observa una mayor prevalencia en hombres de raza negra.', 
      '- Supervivencia: Las tasas de supervivencia son altas, especialmente cuando el cancer se detecta y trata en sus etapas tempranas.'], []).
 
-template([importancia, deteccion, temprana, datos, estadisticos, cancer, prostata], 
+template([importancia, de,la,deteccion, temprana, datos, estadisticos,de, cancer,de, prostata], 
     ['La deteccion temprana del cancer de prostata juega un papel clave en las tasas de supervivencia y el exito del tratamiento.', 
      'Las pruebas de deteccion, como el PSA (antigeno prostatico especifico), pueden ayudar a identificar la enfermedad en etapas tempranas cuando las opciones de tratamiento son mas efectivas.'], []).
 
@@ -392,6 +421,7 @@ template([variabilidad, tasas, incidencia, cancer, prostata],
     ['Es importante destacar que las tasas de incidencia del cancer de prostata pueden variar segun la region geografica y los grupos etnicos.', 
      'Factores geneticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
 
+template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
 elizaSintomas(X, R) :-
     sintomas(X),
     (
