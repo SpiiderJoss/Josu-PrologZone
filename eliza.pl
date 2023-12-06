@@ -238,47 +238,41 @@ template([como, utilizar, un,pre,entreno],
      '- Timing: Consume el suplemento aproximadamente 30-60 minutos antes del entrenamiento para permitir la absorcion.', 
      '- Evita excesos: No combines multiples fuentes de estimulantes y evita el consumo excesivo para prevenir efectos secundarios.'], []).
 
-% Template sobre consideraciones antes de tomar suplementos pre-entrenamiento
 template([consideraciones, antes, de, tomar, pre,entreno], 
     ['Antes de tomar suplementos pre-entrenamiento, ten en cuenta algunas consideraciones:', 
-     '- Consulta médica: Si tienes condiciones médicas preexistentes, consulta con un profesional de la salud antes de tomarlos.', 
-     '- Sensibilidad a estimulantes: Si eres sensible a la cafeína u otros estimulantes, elige productos con baja cantidad o sin ellos.', 
+     '- Consulta medica: Si tienes condiciones medicas preexistentes, consulta con un profesional de la salud antes de tomarlos.', 
+     '- Sensibilidad a estimulantes: Si eres sensible a la cafeina u otros estimulantes, elige productos con baja cantidad o sin ellos.', 
      '- Descanso y ciclos: Considera periodos de descanso para evitar la dependencia y mantener la sensibilidad a los ingredientes.'], []).
 
-% Template sobre el kit básico del gimnasio
 template([kit, basico, del, gym], 
-    ['El kit básico del gimnasio incluye varios elementos esenciales para un programa de entrenamiento efectivo:', 
-     '- Ropa cómoda y calzado adecuado: Garantiza comodidad y seguridad durante el ejercicio.', 
+    ['El kit basico del gimnasio incluye varios elementos esenciales para un programa de entrenamiento efectivo:', 
+     '- Ropa comoda y calzado adecuado: Garantiza comodidad y seguridad durante el ejercicio.', 
      '- Botella de agua: Mantente hidratado durante el entrenamiento.', 
-     '- Toalla: Útil para secarte y mantener la higiene en el gimnasio.', 
+     '- Toalla: Util para secarte y mantener la higiene en el gimnasio.', 
      '- Guantes de levantamiento de pesas: Protegen las manos durante el levantamiento de pesas.', 
-     '- Auriculares: Para disfrutar de música o podcasts que te motiven.', 
-     '- Agenda o aplicación de seguimiento: Registra tus entrenamientos y progreso.'], []).
+     '- Auriculares: Para disfrutar de musica o podcasts que te motiven.', 
+     '- Agenda o aplicacion de seguimiento: Registra tus entrenamientos y progreso.'], []).
 
-% Template sobre la importancia de la ropa y calzado adecuado
 template([importancia, de, ropa, y, calzado, adecuado], 
-    ['Usar ropa cómoda y calzado adecuado es crucial para el éxito en el gimnasio:', 
-     '- Comodidad: Ropa adecuada permite movimientos libres y cómodos durante el ejercicio.', 
+    ['Usar ropa comoda y calzado adecuado es crucial para el exito en el gimnasio:', 
+     '- Comodidad: Ropa adecuada permite movimientos libres y comodos durante el ejercicio.', 
      '- Seguridad: Calzado adecuado proporciona soporte y reduce el riesgo de lesiones.', 
-     '- Adecuación al tipo de ejercicio: La elección de la ropa debe adaptarse al tipo de ejercicio que realices.'], []).
+     '- Adecuacion al tipo de ejercicio: La eleccion de la ropa debe adaptarse al tipo de ejercicio que realices.'], []).
 
-% Template sobre cómo elegir guantes de levantamiento de pesas
 template([como, elegir, guantes, de, levantamiento, de, pesas], 
     ['Al elegir guantes de levantamiento de pesas, considera los siguientes factores:', 
-     '- Ajuste: Deben ajustarse cómodamente sin ser demasiado ajustados o sueltos.', 
+     '- Ajuste: Deben ajustarse comodamente sin ser demasiado ajustados o sueltos.', 
      '- Material: Opta por materiales duraderos y transpirables.', 
-     '- Protección: Deben proporcionar protección para las manos durante el levantamiento de pesas.'], []).
+     '- Proteccion: Deben proporcionar proteccion para las manos durante el levantamiento de pesas.'], []).
 
-% Template sobre la importancia de la hidratación
 template([importancia, de, la, hidratacion], 
-    ['Mantenerse hidratado es esencial para un rendimiento óptimo en el gimnasio:', 
-     '- Rendimiento: La deshidratación puede afectar negativamente el rendimiento y la resistencia.', 
-     '- Recuperación: La hidratación adecuada facilita la recuperación muscular después del ejercicio.', 
+    ['Mantenerse hidratado es esencial para un rendimiento optimo en el gimnasio:', 
+     '- Rendimiento: La deshidratacion puede afectar negativamente el rendimiento y la resistencia.', 
+     '- Recuperacion: La hidratacion adecuada facilita la recuperacion muscular despues del ejercicio.', 
      '- Salud general: Beber suficiente agua es crucial para la salud en general.'], []).
 
+template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
 
-
-template(_, ['Por favor explicate un poco mas no te entiendo,'], []). 
 
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Templates cancer de prostata
@@ -295,138 +289,122 @@ template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
 
 
 template([que, es, el, cancer, de, prostata], 
-         ['El cáncer de próstata es un tipo de cáncer que se desarrolla en la próstata, una glándula del sistema reproductor masculino.', 
-          'La próstata es responsable de producir parte del líquido seminal que protege y nutre a los espermatozoides.', 
-          'El cáncer de próstata es uno de los cánceres más comunes en los hombres.'], []).
+         ['El cancer de prostata es un tipo de cancer que se desarrolla en la prostata, una glandula del sistema reproductor masculino.', 
+          'La prostata es responsable de producir parte del liquido seminal que protege y nutre a los espermatozoides.', 
+          'El cancer de prostata es uno de los canceres mas comunes en los hombres.'], []).
 
-% Template que aborda la prevalencia del cáncer de próstata
 template([cuantas, personas, tienen, cancer, de, prostata], 
-         ['El cáncer de próstata es bastante común y afecta a un gran número de hombres en todo el mundo.', 
-          'La incidencia aumenta con la edad, y se estima que la mayoría de los casos se diagnostican en hombres mayores de 65 años.'], []).
+         ['El cancer de prostata es bastante comun y afecta a un gran numero de hombres en todo el mundo.', 
+          'La incidencia aumenta con la edad, y se estima que la mayoria de los casos se diagnostican en hombres mayores de 65 anos.'], []).
 
-% Template sobre los factores de riesgo del cáncer de próstata
 template([cuales, son, los, factores, de, riesgo, del, cancer, de, prostata], 
-         ['Algunos de los factores de riesgo para el cáncer de próstata incluyen:', 
+         ['Algunos de los factores de riesgo para el cancer de prostata incluyen:', 
           '- Edad avanzada.', 
-          '- Antecedentes familiares de cáncer de próstata.', 
+          '- Antecedentes familiares de cancer de prostata.', 
           '- Raza (los hombres afroamericanos tienen un mayor riesgo).', 
           '- Dieta rica en grasas.'], []).
 
-% Template que destaca la importancia de los exámenes de detección
 template([por, que, es, importante, hacer, examenes, de, deteccion, del, cancer, de, prostata], 
-         ['La detección temprana del cáncer de próstata es crucial para un tratamiento exitoso.', 
-          'Los exámenes de detección, como el análisis de antígeno prostático específico (PSA) y el examen rectal digital (ERD),', 
-          'pueden ayudar a identificar la enfermedad en sus etapas iniciales cuando es más tratable.'], []).
+         ['La deteccion temprana del cancer de prostata es crucial para un tratamiento exitoso.', 
+          'Los examenes de deteccion, como el analisis de antigeno prostatico especifico (PSA) y el examen rectal digital (ERD),', 
+          'pueden ayudar a identificar la enfermedad en sus etapas iniciales cuando es mas tratable.'], []).
 
-% Template que aborda las opciones de tratamiento para el cáncer de próstata
 template([cuales, son, las, opciones, de, tratamiento, del, cancer, de, prostata], 
-         ['Las opciones de tratamiento para el cáncer de próstata pueden incluir:', 
-          '- Cirugía para extirpar la próstata.', 
-          '- Radioterapia para destruir las células cancerosas.', 
-          '- Terapia hormonal para reducir los niveles de hormonas que alimentan el cáncer.', 
-          '- Vigilancia activa en casos de cáncer de bajo riesgo.', 
-          'El tratamiento específico dependerá de la etapa y la agresividad del cáncer.'], []).
+         ['Las opciones de tratamiento para el cancer de prostata pueden incluir:', 
+          '- Cirugia para extirpar la prostata.', 
+          '- Radioterapia para destruir las celulas cancerosas.', 
+          '- Terapia hormonal para reducir los niveles de hormonas que alimentan el cancer.', 
+          '- Vigilancia activa en casos de cancer de bajo riesgo.', 
+          'El tratamiento especifico dependera de la etapa y la agresividad del cancer.'], []).
 
-% Template que ofrece apoyo emocional a los pacientes
 template([como, lidiar, emocionalmente, con, el, cancer, de, prostata], 
-         ['Recibir un diagnóstico de cáncer de próstata puede ser emocionalmente desafiante.', 
+         ['Recibir un diagnostico de cancer de prostata puede ser emocionalmente desafiante.', 
           'Es importante buscar apoyo emocional de amigos, familiares o profesionales de la salud mental.', 
-          'La participación en grupos de apoyo también puede ser beneficioso para compartir experiencias con otros afectados.'], []).
+          'La participacion en grupos de apoyo tambien puede ser beneficioso para compartir experiencias con otros afectados.'], []).
 
-% Template que resalta la importancia del estilo de vida saludable
 template([que, puedo, hacer, para, reducir, el, riesgo, de, cancer, de, prostata], 
-         ['Adoptar un estilo de vida saludable puede ayudar a reducir el riesgo de desarrollar cáncer de próstata.', 
+         ['Adoptar un estilo de vida saludable puede ayudar a reducir el riesgo de desarrollar cancer de prostata.', 
           'Algunas recomendaciones incluyen:', 
           '- Mantener una dieta equilibrada y baja en grasas.', 
           '- Mantener un peso corporal saludable.', 
           '- Hacer ejercicio regularmente.', 
           '- Evitar el consumo excesivo de alcohol.', 
-          '- Dejar de fumar si es un hábito.'], []).
+          '- Dejar de fumar si es un habito.'], []).
 
-% Template sobre tratamientos del cáncer de prostata
 template([tratamientos, del, cancer, de, prostata], 
-    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente 
+    ['El tratamiento del cancer de prostata puede variar segun el estadio de la enfermedad y la salud general del paciente 
      Algunas opciones de tratamiento incluyen:
-     1.- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata
-     2.- Radioterapia: Utiliza radiación para destruir las células cancerosas
-     3.- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer
-     4.- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo
-     5.- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado'], []).
+     1.- Cirugia: La prostatectomia es la extirpacion quirurgica de la prostata
+     2.- Radioterapia: Utiliza radiacion para destruir las celulas cancerosas
+     3.- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cancer
+     4.- Vigilancia activa: Monitorizacion cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo
+     5.- Quimioterapia: Puede ser utilizada en casos avanzados para tratar celulas cancerosas que se han diseminado'], []).
 
-% Template sobre efectos secundarios y manejo durante el tratamiento
 template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
-    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:
-     - Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.
-     - Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.
-     - Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso. 
-     - Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga 
-     El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
+    ['Es importante tener en cuenta que cada opcion de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:
+     - Cirugia: Puede haber efectos secundarios como incontinencia urinaria o disfuncion erectil.
+     - Radioterapia: Posibles efectos secundarios incluyen fatiga, irritacion de la piel y cambios en la funcion erectil.
+     - Terapia hormonal: Puede causar efectos secundarios como disminucion del deseo sexual y aumento de peso. 
+     - Quimioterapia: Puede provocar nauseas, perdida de cabello y fatiga 
+     El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo medico.'], []).
 
-% Template sobre toma de decisiones y apoyo emocional
 template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
-    ['La toma de decisiones sobre el tratamiento del cáncer de próstata es personal y puede ser difícil. Algunos aspectos a considerar incluyen:', 
-     '- Consulta con profesionales: Habla con tu oncólogo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
+    ['La toma de decisiones sobre el tratamiento del cancer de prostata es personal y puede ser dificil. Algunos aspectos a considerar incluyen:', 
+     '- Consulta con profesionales: Habla con tu oncologo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
      '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
-     '- Segunda opinión: Si es necesario, considera buscar una segunda opinión médica antes de tomar decisiones importantes.'], []).
+     '- Segunda opinion: Si es necesario, considera buscar una segunda opinion medica antes de tomar decisiones importantes.'], []).
 
-% Template sobre tratamientos del cáncer de próstata
 template([tratamientos, del, cancer, de, prostata], 
-    ['El tratamiento del cáncer de próstata puede variar según el estadio de la enfermedad y la salud general del paciente.', 
+    ['El tratamiento del cancer de prostata puede variar segun el estadio de la enfermedad y la salud general del paciente.', 
      'Algunas opciones de tratamiento incluyen:', 
-     '- Cirugía: La prostatectomía es la extirpación quirúrgica de la próstata.', 
-     '- Radioterapia: Utiliza radiación para destruir las células cancerosas.', 
-     '- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cáncer.', 
-     '- Vigilancia activa: Monitorización cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
-     '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar células cancerosas que se han diseminado.'], []).
+     '- Cirugia: La prostatectomia es la extirpacion quirurgica de la prostata.', 
+     '- Radioterapia: Utiliza radiacion para destruir las celulas cancerosas.', 
+     '- Terapia hormonal: Busca reducir los niveles de testosterona para frenar el crecimiento del cancer.', 
+     '- Vigilancia activa: Monitorizacion cercana sin tratamiento inmediato, especialmente para casos de bajo riesgo.', 
+     '- Quimioterapia: Puede ser utilizada en casos avanzados para tratar celulas cancerosas que se han diseminado.'], []).
 
-% Template sobre efectos secundarios y manejo durante el tratamiento
 template([efectos, secundarios, y, manejo, tratamiento, cancer, prostata], 
-    ['Es importante tener en cuenta que cada opción de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
-     '- Cirugía: Puede haber efectos secundarios como incontinencia urinaria o disfunción eréctil.', 
-     '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritación de la piel y cambios en la función eréctil.', 
-     '- Terapia hormonal: Puede causar efectos secundarios como disminución del deseo sexual y aumento de peso.', 
-     '- Quimioterapia: Puede provocar náuseas, pérdida de cabello y fatiga.', 
-     'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo médico.'], []).
+    ['Es importante tener en cuenta que cada opcion de tratamiento puede llevar consigo efectos secundarios. Algunas consideraciones incluyen:', 
+     '- Cirugia: Puede haber efectos secundarios como incontinencia urinaria o disfuncion erectil.', 
+     '- Radioterapia: Posibles efectos secundarios incluyen fatiga, irritacion de la piel y cambios en la funcion erectil.', 
+     '- Terapia hormonal: Puede causar efectos secundarios como disminucion del deseo sexual y aumento de peso.', 
+     '- Quimioterapia: Puede provocar nauseas, perdida de cabello y fatiga.', 
+     'El manejo de estos efectos secundarios generalmente se discute y aborda con el equipo medico.'], []).
 
-% Template sobre toma de decisiones y apoyo emocional
 template([toma, de, decisiones, y, apoyo, emocional, tratamiento, cancer, prostata], 
-    ['La toma de decisiones sobre el tratamiento del cáncer de próstata es personal y puede ser difícil. Algunos aspectos a considerar incluyen:', 
-     '- Consulta con profesionales: Habla con tu oncólogo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
+    ['La toma de decisiones sobre el tratamiento del cancer de prostata es personal y puede ser dificil. Algunos aspectos a considerar incluyen:', 
+     '- Consulta con profesionales: Habla con tu oncologo y otros profesionales de la salud para comprender las opciones y sus implicaciones.', 
      '- Apoyo emocional: Busca apoyo emocional de amigos, familiares o grupos de apoyo.', 
-     '- Segunda opinión: Si es necesario, considera buscar una segunda opinión médica antes de tomar decisiones importantes.'], []).
+     '- Segunda opinion: Si es necesario, considera buscar una segunda opinion medica antes de tomar decisiones importantes.'], []).
 
-% Template sobre datos estadísticos del cáncer de próstata
 template([datos, estadisticos, del, cancer, de, prostata], 
-    ['El cáncer de próstata es una enfermedad común en los hombres, y las estadísticas proporcionan una visión de su impacto:', 
-     'Según datos recientes:', 
-     '- Incidencia: El cáncer de próstata es uno de los cánceres más diagnosticados en hombres a nivel mundial.', 
+    ['El cancer de prostata es una enfermedad comun en los hombres, y las estadisticas proporcionan una vision de su impacto:', 
+     'Segun datos recientes:', 
+     '- Incidencia: El cancer de prostata es uno de los canceres mas diagnosticados en hombres a nivel mundial.', 
      '- Factores de riesgo: La incidencia aumenta con la edad, y se observa una mayor prevalencia en hombres de raza negra.', 
-     '- Supervivencia: Las tasas de supervivencia son altas, especialmente cuando el cáncer se detecta y trata en sus etapas tempranas.'], []).
+     '- Supervivencia: Las tasas de supervivencia son altas, especialmente cuando el cancer se detecta y trata en sus etapas tempranas.'], []).
 
-% Template sobre la importancia de la detección temprana
 template([importancia, deteccion, temprana, datos, estadisticos, cancer, prostata], 
-    ['La detección temprana del cáncer de próstata juega un papel clave en las tasas de supervivencia y el éxito del tratamiento.', 
-     'Las pruebas de detección, como el PSA (antígeno prostático específico), pueden ayudar a identificar la enfermedad en etapas tempranas cuando las opciones de tratamiento son más efectivas.'], []).
+    ['La deteccion temprana del cancer de prostata juega un papel clave en las tasas de supervivencia y el exito del tratamiento.', 
+     'Las pruebas de deteccion, como el PSA (antigeno prostatico especifico), pueden ayudar a identificar la enfermedad en etapas tempranas cuando las opciones de tratamiento son mas efectivas.'], []).
 
-% Template sobre variabilidad en las tasas de incidencia
 template([variabilidad, tasas, incidencia, cancer, prostata], 
-    ['Es importante destacar que las tasas de incidencia del cáncer de próstata pueden variar según la región geográfica y los grupos étnicos.', 
-     'Factores genéticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
+    ['Es importante destacar que las tasas de incidencia del cancer de prostata pueden variar segun la region geografica y los grupos etnicos.', 
+     'Factores geneticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
 
-% Hechos que definen síntomas y factores de riesgo
-% Sintomas
-		elizaSintomas(X, R) :-
-			sintomas(X),
-			(
-				X = dificultad_al_orinar, R = ['Sí, la dificultad al orinar es sintoma de cancer de prostata'];
-				X = orina_interrumpida, R = ['Sí, la orina interrumpida es sintoma de cancer de prostata'];
-				X = miccion, R = ['Sí, la micción frecuente puede ser un síntoma de la cancer de prostata.'];
-				X = ardor_al_orinar, R = ['Sí, el ardor al orinar es sintoma de cancer de prostata'];
-				X = sangre_en_orina, R = ['Sí, la sangre en la orina o semen es sintoma de cancer de prostata'];
-				X = dolor_en_espalda, R = ['Sí, el dolor en la espalda es sintoma de cancer de prostata'];
-				X = dolor_al_eyacular, R = ['Sí, el dolor al eyacular es sintoma de cancer de prostata'];	
-				R = ['Sí, el dolor de', X, 'puede ser un síntoma de cancer de prostata']
-			).
+elizaSintomas(X, R) :-
+    sintomas(X),
+    (
+        X = dificultad_al_orinar, R = ['Si, la dificultad al orinar es sintoma de cancer de prostata'];
+        X = orina_interrumpida, R = ['Si, la orina interrumpida es sintoma de cancer de prostata'];
+        X = miccion, R = ['Si, la miccion frecuente puede ser un sintoma de la cancer de prostata.'];
+        X = ardor_al_orinar, R = ['Si, el ardor al orinar es sintoma de cancer de prostata'];
+        X = sangre_en_orina, R = ['Si, la sangre en la orina o semen es sintoma de cancer de prostata'];
+        X = dolor_en_espalda, R = ['Si, el dolor en la espalda es sintoma de cancer de prostata'];
+        X = dolor_al_eyacular, R = ['Si, el dolor al eyacular es sintoma de cancer de prostata'];    
+        R = ['Si, el dolor de', X, 'puede ser un sintoma de cancer de prostata']
+    ).
+
 
 		elizaSintomas(X, R):- \+sintomas(X), R = [al, parecer, el, sintoma, X , no, es, sintoma, de, cancer,de , prostata].
 
@@ -572,7 +550,7 @@ match([S|Stim],[I|Input]) :-
     match(Stim, Input),!.
 
 match([S|Stim],[_|Input]) :-
-% I es un s(X), lo ignoro y continúo con el resto de la lista
+% I es un s(X), lo ignoro y continuo con el resto de la lista
     \+atom(S),
     match(Stim, Input),!.
 
