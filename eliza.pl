@@ -557,6 +557,7 @@ replace0([I|_], Input, _, Resp, R):-
     X == flagLike,
     arnoldLikes(Atom, R).
 
+
 % Arnold does:
 replace0([I|_], Input, _, Resp, R):-
     nth0(I, Input, Atom),
