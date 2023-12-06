@@ -1,13 +1,13 @@
 
 arnold:- writeln('Hola , mi nombre es  Arnold tu chatbot del gym,
     tengo conocimientos en Cancer de prostata, en que puedo ayudarte?...,
-    usar solo minúsculas sin . al final:'),
+    usar solo minusculas sin . al final y sin acentos...'),
     readln(Input),
     arnold(Input),!.
-arnold(Input):- Input == ['Adios'],
-    writeln('Adios. espero poder verte ayudado.'), !.
+arnold(Input):- Input == ['adios'],
+    writeln('Adios. espero haber sido de ayuda.'), !.
 arnold(Input):- Input == ['Adios', '.'],
-    writeln('Adios. espero poder verte ayudado.'), !.
+    writeln('Adios. espero haber sido de ayuda.'), !.
 arnold(Input) :-
     template(Stim, Resp, IndStim),
     match(Stim, Input),
@@ -53,6 +53,10 @@ template([tengo, s(_),  _], [puedo, recomendarte, un, libro, sobre, ese, tema], 
 template([por, favor, s(_), _], ['No', puedo, ayudarte, ',', solo, soy, una, maquina], []).
 template([dime, un, s(_), _], ['No', puedo, ',', no, soy, bueno, en, eso], []).
 template([cual, es, el , mejor, chocolate, del, mundo],['El', mejor, chocolate, del, mundo, es, el , que,te,guste,a,ti], []).
+
+% templates random
+template([quien,es,el,profe,de,prolog],
+        ['El profe de la materia prolog se llama Jesus Eduardo Alcaraz, esperemos te ponga 100, por que te la rifaste'],[]).
 
 % preguntas gym
 template([dime,una,rutina,de,entrenamiento,para,el,gym] ,['Si', pero, dime, enfocado, en, que, ?], []).
@@ -339,7 +343,13 @@ template([importancia, de, la, hidratacion],
 		template([tengo, un, s(_)], [flagSoluciones], [3]).
 		template([tengo, s(_)], [flagSoluciones], [1]).
 
+template([que,se,hace,para,el,mal,de,amores], 
+         ['Una cheve padrino, arreglao'], []).
 
+template([ayuda,creo,que,tengo,cancer,de,prostata], 
+         ['El cancer de prostata es un tipo de cancer que se desarrolla en la prostata, una glandula del sistema reproductor masculino.',  
+          'El cancer de prostata es uno de los canceres mas comunes en los hombres.',
+          'Si crees que tienes cancer de prostata pues ya fuiste xD'], []).
 template([que, es, el, cancer, de, prostata], 
          ['El cancer de prostata es un tipo de cancer que se desarrolla en la prostata, una glandula del sistema reproductor masculino.', 
           'La prostata es responsable de producir parte del liquido seminal que protege y nutre a los espermatozoides.', 
