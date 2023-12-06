@@ -87,25 +87,25 @@ template([me, puedes, recomendar, una, rutina, de, brazos, para, ganar,fuerza],
          Tríceps en polea con cuerda: 3 series x 10-12 repeticiones'], []).
 
 template([que,consejos,me,puedes,dar,para,el,gym], 
-         ['1.- Realiza calentamiento antes de cada sesión.
-            2.- Incrementa gradualmente el peso a medida que te vuelves más fuerte.
+         ['1.- Realiza calentamiento antes de cada sesion.
+            2.- Incrementa gradualmente el peso a medida que te vuelves mas fuerte.
             3.- Descansa entre 2-3 minutos entre las series de ejercicios principales.
-            4.- Realiza ejercicios compuestos para trabajar varios músculos a la vez.
-            5.- Mantén una buena forma técnica en todo momento.
-            6.- Escucha a tu cuerpo y ajusta la intensidad según sea necesario.
-            7.- Asegúrate de incluir días de descanso en tu semana.'], []).
+            4.- Realiza ejercicios compuestos para trabajar varios musculos a la vez.
+            5.- Manten una buena forma tecnica en todo momento.
+            6.- Escucha a tu cuerpo y ajusta la intensidad segun sea necesario.
+            7.- Asegurate de incluir dias de descanso en tu semana.'], []).
 
 % Template sobre la etapa de definición en el gym
 template([que, es, la, etapa, de, definicion], 
-    ['La etapa de definición en el gimnasio se refiere a un período enfocado en reducir el porcentaje de grasa corporal', 
-     'para resaltar y definir los músculos. Es comunmente seguida después de una fase de aumento de masa muscular.', 
+    ['La etapa de definicion en el gimnasio se refiere a un periodo enfocado en reducir el porcentaje de grasa corporal', 
+     'para resaltar y definir los musculos. Es comunmente seguida despues de una fase de aumento de masa muscular.', 
      'Durante esta fase, el objetivo principal es perder grasa mientras se mantiene la masa muscular ganada.'], []).
 
 % Template sobre consejos para la etapa de definición
 template([consejos, para, la, etapa, de, definicion], 
     ['Algunos consejos para la etapa de definicion incluyen:', 
      '- Manten una dieta balanceada y controla tu ingesta calorica.', 
-     '- Prioriza las proteínas para preservar la masa muscular.', 
+     '- Prioriza las proteinas para preservar la masa muscular.', 
      '- Realiza entrenamiento cardiovascular para quemar calorias adicionales.', 
      '- Incorpora ejercicios de resistencia para mantener la fuerza muscular.', 
      '- Bebe suficiente agua para mantener la hidratacion.'], []).
@@ -119,138 +119,124 @@ template([importancia, de, la, paciencia, en, definicion],
 % Template sobre la etapa de volumen en el gym
 template([que, es, la, etapa, de, volumen], 
     ['La etapa de volumen en el gimnasio es un período dedicado a ganar masa muscular y fuerza.', 
-     'Durante esta fase, el objetivo principal es consumir un excedente calórico para favorecer el crecimiento muscular.', 
-     'Se caracteriza por un entrenamiento intenso con pesas y una ingesta calórica controlada.'], []).
+     'Durante esta fase, el objetivo principal es consumir un excedente calorico para favorecer el crecimiento muscular.', 
+     'Se caracteriza por un entrenamiento intenso con pesas y una ingesta calorica controlada.'], []).
 
 % Template sobre consejos para la etapa de volumen
 template([consejos, para, la, etapa, de, volumen], 
     ['Algunos consejos para la etapa de volumen incluyen:', 
-     '- Mantén una ingesta calórica suficiente para promover el crecimiento muscular.', 
-     '- Prioriza las proteínas para facilitar la reparación y el crecimiento muscular.', 
-     '- Realiza entrenamiento de fuerza con énfasis en levantamientos compuestos.', 
-     '- Descansa lo suficiente para permitir la recuperación y el crecimiento muscular.', 
-     '- Considera la utilización de suplementos como proteínas y carbohidratos.'], []).
+     '- Manten una ingesta calorica suficiente para promover el crecimiento muscular.', 
+     '- Prioriza las proteinas para facilitar la reparacion y el crecimiento muscular.', 
+     '- Realiza entrenamiento de fuerza con enfasis en levantamientos compuestos.', 
+     '- Descansa lo suficiente para permitir la recuperacion y el crecimiento muscular.', 
+     '- Considera la utilización de suplementos como proteinas y carbohidratos.'], []).
 
 % Template sobre la importancia de la consistencia en la etapa de volumen
 template([importancia, de, la, consistencia, en, volumen], 
     ['La consistencia es clave durante la etapa de volumen.', 
      'Es importante mantenerse enfocado en tus objetivos a largo plazo y seguir con la rutina de entrenamiento y la dieta planificada.', 
-     'Los resultados en la fase de volumen se acumulan con el tiempo y la dedicación.'], []).
+     'Los resultados en la fase de volumen se acumulan con el tiempo y la dedicacion.'], []).
 
 % Template sobre la mensualidad promedio de gimnasios en México
 template([costo, de, mensualidad, de, gimnasio], 
-    ['El costo de mensualidad de gimnasios en México puede variar ampliamente dependiendo de la ubicación, el tipo de gimnasio y los servicios ofrecidos.',
-     'En promedio, las mensualidades pueden oscilar entre 300 y 400 pesos mexicanos. Se recomienda contactar directamente con los gimnasios locales para obtener información específica.'], []).
+    ['El costo de mensualidad de gimnasios en Mexico puede variar ampliamente dependiendo de la ubicación, el tipo de gimnasio y los servicios ofrecidos.',
+     'En promedio, las mensualidades pueden oscilar entre 300 y 400 pesos mexicanos. Se recomienda contactar directamente con los gimnasios locales para obtener informacion especifica.'], []).
 
 % Template sobre factores que afectan el costo de mensualidades en gimnasios
 template([factores, que, afectan, costo, de, mensualidad, de, gimnasio], 
-    ['Varios factores pueden afectar el costo de las mensualidades en gimnasios de México:', 
-     '- La ubicación geográfica: Los gimnasios en ciudades grandes tienden a ser más caros.', 
-     '- Servicios ofrecidos: Gimnasios con instalaciones de lujo o clases especializadas pueden tener tarifas más altas.', 
-     '- Duración del contrato: Algunos gimnasios ofrecen descuentos por contratos a largo plazo.', 
+    ['Varios factores pueden afectar el costo de las mensualidades en gimnasios de Mexico:', 
+     '- La ubicacion geografica: Los gimnasios en ciudades grandes tienden a ser mas caros.', 
+     '- Servicios ofrecidos: Gimnasios con instalaciones de lujo o clases especializadas pueden tener tarifas mas altas.', 
+     '- Duracion del contrato: Algunos gimnasios ofrecen descuentos por contratos a largo plazo.', 
      '- Promociones y ofertas: Los gimnasios a veces tienen promociones especiales o descuentos temporales.'], []).
 
-% Template sobre opciones de membresía y costos adicionales
 template([opciones, de, membresia, y, costos, adicionales, en, gimnasio], 
-    ['Los gimnasios en México suelen ofrecer diferentes opciones de membresía y costos adicionales:', 
-     '- Membresía mensual estándar: Incluye acceso básico al gimnasio y sus instalaciones.', 
-     '- Membresía premium: Puede incluir acceso a clases especiales, entrenadores personales, y más.', 
-     '- Costos adicionales: Algunos gimnasios pueden tener tarifas adicionales, como inscripción, mantenimiento o servicios específicos.'], []).
+    ['Los gimnasios en Mexico suelen ofrecer diferentes opciones de membresia y costos adicionales:', 
+     '- Membresia mensual estendar: Incluye acceso basico al gimnasio y sus instalaciones.', 
+     '- Membresia premium: Puede incluir acceso a clases especiales, entrenadores personales, y mas.', 
+     '- Costos adicionales: Algunos gimnasios pueden tener tarifas adicionales, como inscripcion, mantenimiento o servicios especificos.'], []).
 
-% Template sobre qué son los suplementos alimenticios
 template([que, son, los, suplementos, alimenticios], 
     ['Los suplementos alimenticios son productos diseñados para complementar la dieta y proporcionar nutrientes adicionales.', 
-     'Pueden incluir vitaminas, minerales, aminoácidos, ácidos grasos esenciales, hierbas y otros ingredientes.', 
-     'Están destinados a llenar posibles deficiencias nutricionales o apoyar objetivos específicos como el aumento de masa muscular o la pérdida de peso.'], []).
+     'Pueden incluir vitaminas, minerales, aminoacidos, acidos grasos esenciales, hierbas y otros ingredientes.', 
+     'Estan destinados a llenar posibles deficiencias nutricionales o apoyar objetivos específicos como el aumento de masa muscular o la perdida de peso.'], []).
 
-% Template sobre los beneficios de los suplementos alimenticios
 template([beneficios, de, suplementos, alimenticios], 
     ['Los suplementos alimenticios pueden ofrecer varios beneficios:', 
      '- Cubrir deficiencias nutricionales: Ayudan a garantizar que se obtengan todos los nutrientes esenciales.', 
      '- Apoyo para objetivos específicos: Algunos suplementos son formulados para ayudar en metas como el desarrollo muscular o la recuperación.', 
      '- Facilidad y conveniencia: Proporcionan una manera práctica de obtener nutrientes adicionales sin depender completamente de la comida.', 
-     '- Mejora del rendimiento: Algunos suplementos están diseñados para mejorar el rendimiento atlético o cognitivo.'], []).
+     '- Mejora del rendimiento: Algunos suplementos estan diseñados para mejorar el rendimiento atletico o cognitivo.'], []).
 
-% Template sobre cómo incorporar suplementos en la dieta
 template([como, incorporar, suplementos, en, la, dieta], 
     ['Incorporar suplementos en la dieta puede hacerse de varias maneras:', 
      '- Consulta con un profesional: Antes de tomar cualquier suplemento, es recomendable consultar con un profesional de la salud o un nutricionista.', 
      '- Identifica deficiencias: Si tienes deficiencias nutricionales, un profesional puede recomendar suplementos específicos para cubrirlas.', 
      '- Integra gradualmente: Introduce los suplementos gradualmente y observa cómo afectan tu cuerpo y tus metas.', 
-     '- Sigue una dosificación adecuada: Sigue las recomendaciones de dosificación para evitar efectos secundarios negativos.'], []).
+     '- Sigue una dosificacion adecuada: Sigue las recomendaciones de dosificacion para evitar efectos secundarios negativos.'], []).
 
-% Template sobre qué son las proteínas en polvo
 template([que, son, las, proteinas, en, polvo], 
-    ['Las proteínas en polvo son suplementos alimenticios que proporcionan una fuente concentrada de proteínas.', 
-     'Suelen derivarse de fuentes como suero de leche, caseína, soja, guisante o arroz.', 
-     'Son populares entre aquellos que buscan aumentar la ingesta proteica para apoyar el crecimiento muscular y la recuperación.'], []).
+    ['Las proteinas en polvo son suplementos alimenticios que proporcionan una fuente concentrada de proteinas.', 
+     'Suelen derivarse de fuentes como suero de leche, caseina, soja, guisante o arroz.', 
+     'Son populares entre aquellos que buscan aumentar la ingesta proteica para apoyar el crecimiento muscular y la recuperacion.'], []).
 
-% Template sobre los beneficios de las proteínas en polvo
 template([beneficios, de, proteinas, en, polvo], 
-    ['Las proteínas en polvo ofrecen varios beneficios:', 
-     '- Aumento de la ingesta proteica: Son una forma conveniente de alcanzar los objetivos diarios de proteínas.', 
-     '- Recuperación muscular: Ayudan en la reparación y el crecimiento muscular después del ejercicio.', 
-     '- Control del peso: Pueden ser útiles en planes de pérdida de peso al proporcionar saciedad y mantener la masa muscular.', 
-     '- Versatilidad: Pueden ser mezcladas con líquidos, agregadas a batidos o utilizadas en recetas.'], []).
+    ['Las proteinas en polvo ofrecen varios beneficios:', 
+     '- Aumento de la ingesta proteica: Son una forma conveniente de alcanzar los objetivos diarios de proteinas.', 
+     '- Recuperacion muscular: Ayudan en la reparacion y el crecimiento muscular despues del ejercicio.', 
+     '- Control del peso: Pueden ser utiles en planes de perdida de peso al proporcionar saciedad y mantener la masa muscular.', 
+     '- Versatilidad: Pueden ser mezcladas con liquidos, agregadas a batidos o utilizadas en recetas.'], []).
 
-% Template sobre cómo incorporar proteínas en polvo en la dieta
 template([como, incorporar, proteinas, en, polvo, en, la, dieta], 
-    ['Incorporar proteínas en polvo en la dieta se puede hacer de varias maneras:', 
-     '- Batidos: Mezcla proteínas en polvo con agua, leche o bebidas vegetales para hacer batidos.', 
-     '- Yogur o avena: Agrega proteínas en polvo a yogur, avena o postres para aumentar la ingesta proteica.', 
-     '- Recetas: Integra proteínas en polvo en recetas de panqueques, muffins u otros platillos.', 
-     '- Post-entrenamiento: Consume proteínas en polvo después del entrenamiento para apoyar la recuperación muscular.'], []).
+    ['Incorporar proteinas en polvo en la dieta se puede hacer de varias maneras:', 
+     '- Batidos: Mezcla proteinas en polvo con agua, leche o bebidas vegetales para hacer batidos.', 
+     '- Yogur o avena: Agrega proteinas en polvo a yogur, avena o postres para aumentar la ingesta proteica.', 
+     '- Recetas: Integra proteinas en polvo en recetas de panqueques, muffins u otros platillos.', 
+     '- Post-entrenamiento: Consume proteinas en polvo despues del entrenamiento para apoyar la recuperacion muscular.'], []).
 
-% Template sobre qué es la creatina
 template([que, es, la, creatina], 
     ['La creatina es un compuesto natural que se encuentra en pequeñas cantidades en alimentos como la carne y el pescado.', 
      'Se ha demostrado que es segura y efectiva como suplemento dietético.', 
      'La creatina es conocida por mejorar el rendimiento físico y aumentar la masa muscular.'], []).
 
-% Template sobre los beneficios de la creatina
 template([beneficios, de, la, creatina], 
     ['La creatina ofrece varios beneficios en el ámbito del rendimiento y la salud:', 
      '- Mayor fuerza y potencia: Mejora la capacidad de realizar ejercicios de alta intensidad.', 
      '- Aumento de la masa muscular: Ayuda a retener agua en las células musculares, lo que puede aumentar el tamaño muscular.', 
-     '- Recuperación muscular: Contribuye a una recuperación más rápida después del ejercicio.', 
-     '- Mejora del rendimiento cognitivo: Algunas investigaciones sugieren beneficios para la función cerebral.'], []).
+     '- Recuperacion muscular: Contribuye a una recuperacion mas rapida despues del ejercicio.', 
+     '- Mejora del rendimiento cognitivo: Algunas investigaciones sugieren beneficios para la funcion cerebral.'], []).
 
-% Template sobre cómo tomar creatina
 template([como, tomar, creatina], 
     ['La creatina se puede tomar de diversas formas y dosis:', 
-     '- Fase de carga: Algunas personas optan por una fase de carga tomando dosis más altas durante los primeros días.', 
-     '- Mantenimiento: Después de la fase de carga, se toma una dosis más baja para mantener los niveles de creatina.', 
-     '- Mezcla con líquidos: Puede mezclarse con agua, jugo o batidos de proteínas.', 
-     '- Timing: Puede tomarse antes o después del entrenamiento según preferencias personales.'], []).
+     '- Fase de carga: Algunas personas optan por una fase de carga tomando dosis mas altas durante los primeros dias.', 
+     '- Mantenimiento: Despues de la fase de carga, se toma una dosis mas baja para mantener los niveles de creatina.', 
+     '- Mezcla con liquidos: Puede mezclarse con agua, jugo o batidos de proteinas.', 
+     '- Timing: Puede tomarse antes o despues del entrenamiento segun preferencias personales.'], []).
 
-% Template sobre consideraciones y efectos secundarios de la creatina
 template([consideraciones, y, efectos, secundarios, de, la, creatina], 
     ['Aunque la creatina es generalmente segura, es importante tener en cuenta algunas consideraciones:', 
-     '- Hidratación: Aumenta la hidratación ya que puede causar retención de agua en las células musculares.', 
-     '- Consulta médica: Consulta con un profesional de la salud antes de tomar creatina, especialmente si tienes condiciones médicas preexistentes.', 
-     '- Dosis adecuada: Sigue las recomendaciones de dosificación para evitar efectos secundarios.', 
+     '- Hidratacion: Aumenta la hidratacion ya que puede causar retencion de agua en las células musculares.', 
+     '- Consulta medica: Consulta con un profesional de la salud antes de tomar creatina, especialmente si tienes condiciones medicas preexistentes.', 
+     '- Dosis adecuada: Sigue las recomendaciones de dosificacion para evitar efectos secundarios.', 
      '- Ciclos de descanso: Algunas personas optan por hacer ciclos de descanso para reducir la dependencia del suplemento.'], []).
 
-% Template sobre qué son los suplementos pre-entrenamiento
 template([que, son, los, suplementos, preentrenamiento], 
     ['Los suplementos pre-entrenamiento son productos diseñados para ser consumidos antes del ejercicio físico con el objetivo de mejorar el rendimiento.', 
-     'Suelen contener ingredientes como cafeína, aminoácidos, beta-alanina y otros compuestos que pueden proporcionar energía y mejorar la resistencia.'], []).
+     'Suelen contener ingredientes como cafeina, aminoacidos, beta-alanina y otros compuestos que pueden proporcionar energia y mejorar la resistencia.'], []).
 
-% Template sobre ingredientes comunes en suplementos pre-entrenamiento
 template([cuales,son, los, ingredientes, comunes, en, los,pre,entreno], 
     ['Los suplementos pre-entrenamiento pueden incluir varios ingredientes comunes:', 
-     '- Cafeína: Estimula el sistema nervioso central y mejora la alerta y la energía.', 
-     '- Aminoácidos: Ayudan en la síntesis de proteínas y pueden mejorar la resistencia.', 
+     '- Cafeina: Estimula el sistema nervioso central y mejora la alerta y la energia.', 
+     '- Aminoacidos: Ayudan en la síntesis de proteinas y pueden mejorar la resistencia.', 
      '- Beta-alanina: Contribuye a reducir la fatiga muscular durante el ejercicio intenso.', 
-     '- Oxido nítrico: Mejora el flujo sanguíneo y la entrega de oxígeno a los músculos.'], []).
+     '- Oxido nitrico: Mejora el flujo sanguineo y la entrega de oxigeno a los músculos.'], []).
 
-% Template sobre cómo utilizar los suplementos pre-entrenamiento de manera efectiva
 template([como, utilizar, un,pre,entreno], 
     ['Para utilizar de manera efectiva los suplementos pre-entrenamiento:', 
-     '- Lee las indicaciones: Sigue las recomendaciones de dosificación y uso del fabricante.', 
-     '- Ajusta según tolerancia: Algunas personas pueden ser más sensibles a ciertos ingredientes, ajusta la dosis según tu tolerancia.', 
-     '- Timing: Consume el suplemento aproximadamente 30-60 minutos antes del entrenamiento para permitir la absorción.', 
-     '- Evita excesos: No combines múltiples fuentes de estimulantes y evita el consumo excesivo para prevenir efectos secundarios.'], []).
+     '- Lee las indicaciones: Sigue las recomendaciones de dosificacion y uso del fabricante.', 
+     '- Ajusta segun tolerancia: Algunas personas pueden ser mas sensibles a ciertos ingredientes, ajusta la dosis segun tu tolerancia.', 
+     '- Timing: Consume el suplemento aproximadamente 30-60 minutos antes del entrenamiento para permitir la absorcion.', 
+     '- Evita excesos: No combines multiples fuentes de estimulantes y evita el consumo excesivo para prevenir efectos secundarios.'], []).
 
 % Template sobre consideraciones antes de tomar suplementos pre-entrenamiento
 template([consideraciones, antes, de, tomar, pre,entreno], 
