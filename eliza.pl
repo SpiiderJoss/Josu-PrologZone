@@ -414,6 +414,14 @@ template([a, los, cuantos, meses, veo, resultados, del, gym],
      'Sin embargo, la transformación física significativa a menudo lleva más tiempo, y es crucial mantener la paciencia y la motivación a lo largo del proceso.', 
      'Recuerda ajustar tu rutina de ejercicios y dieta según tus objetivos específicos y busca asesoramiento profesional si es necesario.'], []).
 
+% Sintomas lesion gym
+		template([si, tengo, dolor, de, s(_), y , s(_), es , sintoma , de , una , lesion , _], [flagSintomas2], [4, 6]).
+        template([si, tengo, dolor, de, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
+        template([si, tengo, dolor, en, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
+        template([si, tengo, dolor, en,el, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [5]).
+        template([si, tengo, dolor, en,la, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [5]).
+		template([me,duele,el, s(_),es,una,lesion, _], [flagSintomas1], [3]).
+        template([me,duele,la, s(_),es,una,lesion, _], [flagSintomas1], [3]).
 
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Templates cancer de prostata
@@ -531,8 +539,6 @@ elizaSintomas(X, R) :-
         X = dolor_al_eyacular, R = ['Si, el dolor al eyacular es sintoma de cancer de prostata'];    
         R = ['Si, el dolor de', X, 'puede ser un sintoma de cancer de prostata']
     ).
-
-
 		elizaSintomas(X, R):- \+sintomas(X), R = [al, parecer, el, sintoma, X , no, es, sintoma, de, cancer,de , prostata].
 
         sintomas(dificultad_al_orinar).
@@ -546,6 +552,45 @@ elizaSintomas(X, R) :-
         sintomas(dolor_en_la_espalda).
 		sintomas(dolor_al_eyacular).
 
+
+        elizaSintomas1(X, R) :-
+    sintomas1(X),
+    (
+        X = hombro, R = ['Si tienes mucho dolor en el hombro al realizar movimientos sencillos y cotidianos es muy probable que tengas una lesion.'];
+        X = bicep, R = ['si tienes dolor de bicep despues de un dia de entrenamiento es normal, pero si el dolor persigue y es intolerable, es muy probable que sea una lesion.'];
+        X = tricep, R = ['si tienes dolor de tricep despues de un dia de entrenamiento es normal, pero si el dolor persigue y es intolerable, es muy probable que sea una lesion.'];
+        X = trapecio, R = ['el dolor en el trapecio suele estar despues de un dia de entrenamiento, pero si el dolor es demasiado y no se te quita es posible que tengas una lesion o sea demasiado estres.'];
+        X = antebrazo, R = ['si tienes mucho dolor en el antebrazo es posible que tengas una lesion.'];
+        X = cuadricep, R = ['el dolor en el cuadricep se debe a una buena estimulacion en el entrenamiento, pero si el dolor está despues de dias del entrenamiento y ademas es molesto es posible que tengas una lesion / desgarre , etc.'];
+        X = femoral, R = ['es muy comun las lesiones de femoral, si el dolor es insoportable y te duele hasta al caminar o hacer un pequeño movimiento es sintoma de que tienes una lesion o desgarre.'];
+        X = gluteo, R = ['es muy dificil que tengas una lesion de gluteo, pero si es el caso en el que te lastima mucho a mas no poder, es muy posible que sea una lesion'];
+        X = pantorrilla, R = ['si tienes mucho dolor en la pantorrilla y no puedes caminar es muy probable que tengas una lesion'];
+        X = espalda, R = ['si tuviste un entrenamiento pesado es probable que tengas dolor, pero si hiciste una mala tecnica y el dolor comenzo desde el entrenamiento es muy probable que sea una lesion o desgarre'];    
+        R = ['Si, el dolor de', X, 'puede ser un sintoma de una lesion']
+    ).
+        sintomas1(hombro).
+		sintomas1(bicep).
+        sintomas1(tricep).
+		sintomas1(trapecio).
+		sintomas1(cuadricep).
+		sintomas1(femoral).
+        sintomas1(gluteo).
+		sintomas1(pantorrilla).
+        sintomas1(espalda).
+
+         elizaSintomas2(X,Y, R) :-
+    sintomas2(X,Y),
+    (
+        (X = hombro, Y = espalda), R = ['Si tienes dolor en el hombro y la espalda, es posible que haya una tensión muscular o una lesión en esa área. Es recomendable descansar y, si el dolor persiste, consultar a un profesional médico.'];
+        (X = bicep, Y = tricep), R = ['Si tienes dolor en el bíceps y el tríceps, podría ser consecuencia de un entrenamiento intenso. Asegúrate de realizar estiramientos adecuados y descansar.'];
+        (X = cuadricep, Y = femoral), R = ['El dolor en el cuádriceps y el femoral puede indicar una posible lesión o desgarre muscular. Consulta a un médico para un diagnóstico adecuado.']; 
+        (X = gluteo, Y = pantorrilla), R = ['El dolor de gluteo y pantorrilla puede indicar una posible lesion o desgarre muscular.']; 
+        R = ['Si, el dolor de', X, 'puede ser un sintoma de una lesion']
+    ).
+        sintomas2(hombro,espalda).
+		sintomas2(bicep,tricep).
+        sintomas2(tricep,femoral).
+		sintomas2(gluteo,pantorrilla).
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         % Soluciones 
@@ -721,6 +766,22 @@ replace0([I|_], Input, _, Resp, R):-
     nth0(0, Resp, X),
     X == flagSintomas,
     elizaSintomas(Atom, R).
+
+    % Arnold sintomas1:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    X == flagSintomas1,
+    elizaSintomas1(Atom, R).
+
+ % Arnold elizaSintomas2:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    nth0(1, Resp, Y),
+    X == flagSintomas2,
+    Y == flagSintomas2,
+    elizaSintomas2(Atom, R).
 
 
 replace0([I|Index], Input, N, Resp, R):-
