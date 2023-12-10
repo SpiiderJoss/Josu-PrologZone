@@ -578,6 +578,39 @@ elizaSintomas(X, R) :-
 		sintomas1(pantorrilla).
         sintomas1(espalda).
 
+elizaSoluciones2(X, R) :-
+    soluciones2(X),
+    (
+        X = hombro, R = ['Descansa el hombro y evita ejercicios que causen dolor. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
+        X = bicep, R = ['Permite que el bíceps descanse y evita levantar objetos pesados. Aplica calor para aliviar el dolor. Si persiste, consulta a un especialista.'];
+        X = tricep, R = ['Evita ejercicios intensos que involucren el tríceps. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
+        X = trapecio, R = ['Descansa el trapecio y evita cargar peso en los hombros. Aplica calor para relajar los músculos. Si persiste, consulta a un especialista.'];
+        X = antebrazo, R = ['Evita movimientos que causen dolor en el antebrazo. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
+        X = cuadricep, R = ['Descansa el cuádriceps y evita ejercicios intensos. Aplica hielo para reducir la inflamación. Si persiste, consulta a un especialista.'];
+        X = femoral, R = ['Descansa el músculo femoral y evita estiramientos bruscos. Aplica calor para relajar los músculos. Si persiste, consulta a un fisioterapeuta.'];
+        X = gluteo, R = ['Evita ejercicios que causen molestias en los glúteos. Aplica hielo para reducir la inflamación. Si persiste, consulta a un especialista.'];
+        X = pantorrilla, R = ['Descansa la pantorrilla y evita correr o saltar. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
+        X = espalda, R = ['Evita movimientos que causen dolor en la espalda. Aplica calor para relajar los músculos. Si persiste, consulta a un especialista.'];
+        R = ['Puede que tengas un dolor en', X, ' y aunque no sabemos con exactitud, te recomendamos visitar a un doctor para un análisis más profundo.']
+    ).
+
+elizaSoluciones2(X, R) :- 
+    \+soluciones2(X), 
+    R = ['No tengo conocimiento acerca de soluciones para el dolor en', X].
+
+soluciones2(hombro).
+soluciones2(bicep).
+soluciones2(tricep).
+soluciones2(trapecio).
+soluciones2(antebrazo).
+soluciones2(cuadricep).
+soluciones2(femoral).
+soluciones2(gluteo).
+soluciones2(pantorrilla).
+soluciones2(espalda).
+
+
+    
          elizaSintomas2(X,Y, R) :-
     sintomas2(X,Y),
     (
@@ -591,6 +624,8 @@ elizaSintomas(X, R) :-
 		sintomas2(bicep,tricep).
         sintomas2(tricep,femoral).
 		sintomas2(gluteo,pantorrilla).
+
+        
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         % Soluciones 
