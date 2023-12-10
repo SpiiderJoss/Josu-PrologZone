@@ -423,6 +423,12 @@ template([a, los, cuantos, meses, veo, resultados, del, gym],
 		template([me,duele,el, s(_),es,una,lesion, _], [flagSintomas1], [3]).
         template([me,duele,la, s(_),es,una,lesion, _], [flagSintomas1], [3]).
 
+        % Soluciones - gym
+        template([que, debo, de, hacer, si, tengo, una, lesion,en,la, s(_), _], [flagSoluciones1], [10]).
+        template([que, debo, de, hacer, si, tengo, una, lesion,en,el, s(_), _], [flagSoluciones1], [10]).
+        template([tengo, dolor, en, el , s(_)], [flagSoluciones1], [4]).
+        template([tengo, dolor, en , la , s(_)], [flagSoluciones1], [4]).
+
 % ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 % Templates cancer de prostata
 
@@ -577,39 +583,6 @@ elizaSintomas(X, R) :-
         sintomas1(gluteo).
 		sintomas1(pantorrilla).
         sintomas1(espalda).
-
-elizaSoluciones2(X, R) :-
-    soluciones2(X),
-    (
-        X = hombro, R = ['Descansa el hombro y evita ejercicios que causen dolor. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
-        X = bicep, R = ['Permite que el bíceps descanse y evita levantar objetos pesados. Aplica calor para aliviar el dolor. Si persiste, consulta a un especialista.'];
-        X = tricep, R = ['Evita ejercicios intensos que involucren el tríceps. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
-        X = trapecio, R = ['Descansa el trapecio y evita cargar peso en los hombros. Aplica calor para relajar los músculos. Si persiste, consulta a un especialista.'];
-        X = antebrazo, R = ['Evita movimientos que causen dolor en el antebrazo. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
-        X = cuadricep, R = ['Descansa el cuádriceps y evita ejercicios intensos. Aplica hielo para reducir la inflamación. Si persiste, consulta a un especialista.'];
-        X = femoral, R = ['Descansa el músculo femoral y evita estiramientos bruscos. Aplica calor para relajar los músculos. Si persiste, consulta a un fisioterapeuta.'];
-        X = gluteo, R = ['Evita ejercicios que causen molestias en los glúteos. Aplica hielo para reducir la inflamación. Si persiste, consulta a un especialista.'];
-        X = pantorrilla, R = ['Descansa la pantorrilla y evita correr o saltar. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
-        X = espalda, R = ['Evita movimientos que causen dolor en la espalda. Aplica calor para relajar los músculos. Si persiste, consulta a un especialista.'];
-        R = ['Puede que tengas un dolor en', X, ' y aunque no sabemos con exactitud, te recomendamos visitar a un doctor para un análisis más profundo.']
-    ).
-
-elizaSoluciones2(X, R) :- 
-    \+soluciones2(X), 
-    R = ['No tengo conocimiento acerca de soluciones para el dolor en', X].
-
-soluciones2(hombro).
-soluciones2(bicep).
-soluciones2(tricep).
-soluciones2(trapecio).
-soluciones2(antebrazo).
-soluciones2(cuadricep).
-soluciones2(femoral).
-soluciones2(gluteo).
-soluciones2(pantorrilla).
-soluciones2(espalda).
-
-
     
          elizaSintomas2(X,Y, R) :-
     sintomas2(X,Y),
@@ -647,7 +620,36 @@ soluciones2(espalda).
         soluciones(dolor).
 
 		
-		
+		elizaSoluciones1(X, R) :-
+    soluciones1(X),
+    (
+        X = hombro, R = ['Descansa el hombro y evita ejercicios que causen dolor. Aplica hielo para reducir la inflamación. Si persiste, consulta a un fisioterapeuta.'];
+        X = bicep, R = ['Permite que el biceps descanse y evita levantar objetos pesados. Aplica calor para aliviar el dolor. Si persiste, consulta a un especialista.'];
+        X = tricep, R = ['Evita ejercicios intensos que involucren el triceps. Aplica hielo para reducir la inflamacion. Si persiste, consulta a un fisioterapeuta.'];
+        X = trapecio, R = ['Descansa el trapecio y evita cargar peso en los hombros. Aplica calor para relajar los musculos. Si persiste, consulta a un especialista.'];
+        X = antebrazo, R = ['Evita movimientos que causen dolor en el antebrazo. Aplica hielo para reducir la inflamacion. Si persiste, consulta a un fisioterapeuta.'];
+        X = cuadricep, R = ['Descansa el cuadriceps y evita ejercicios intensos. Aplica hielo para reducir la inflamacion. Si persiste, consulta a un especialista.'];
+        X = femoral, R = ['Descansa el musculo femoral y evita estiramientos bruscos. Aplica calor para relajar los musculos. Si persiste, consulta a un fisioterapeuta.'];
+        X = gluteo, R = ['Evita ejercicios que causen molestias en los gluteos. Aplica hielo para reducir la inflamacion. Si persiste, consulta a un especialista.'];
+        X = pantorrilla, R = ['Descansa la pantorrilla y evita correr o saltar. Aplica hielo para reducir la inflamacion. Si persiste, consulta a un fisioterapeuta.'];
+        X = espalda, R = ['Evita movimientos que causen dolor en la espalda. Aplica calor para relajar los musculos. Si persiste, consulta a un especialista.'];
+        R = ['Puede que tengas un dolor en', X, ' y aunque no sabemos con exactitud, te recomendamos visitar a un doctor para un analisis mas profundo.'] 
+    ).
+
+elizaSoluciones1(X, R) :- 
+    \+soluciones1(X), 
+    R = ['No tengo conocimiento acerca de soluciones para el dolor en', X].
+
+soluciones1(hombro).
+soluciones1(bicep).
+soluciones1(tricep).
+soluciones1(trapecio).
+soluciones1(antebrazo).
+soluciones1(cuadricep).
+soluciones1(femoral).
+soluciones1(gluteo).
+soluciones1(pantorrilla).
+soluciones1(espalda).
 
 
 
@@ -831,9 +833,16 @@ replace0([I|Index], Input, N, Resp, R):-
     N1 is N + 1,
     replace0(Index, Input, N1, R1, R),!.
 
-% Eliza Soluciones:
+% Arnold Soluciones:
 replace0([I|_], Input, _, Resp, R):-
     nth0(I, Input, Atom),
     nth0(0, Resp, X),
     X == flagSoluciones,
     elizaSoluciones(Atom, R).
+    
+ % Arnold soluciones1:
+replace0([I|_], Input, _, Resp, R):-
+    nth0(I, Input, Atom),
+    nth0(0, Resp, X),
+    X == flagSoluciones1,
+    elizaSoluciones1(Atom, R).
