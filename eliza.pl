@@ -66,7 +66,7 @@ template([quien,es,el,profe,de,prolog],
         ['El profe de la materia prolog se llama Jesus Eduardo Alcaraz, esperemos te ponga 100, por que te la rifaste'],[]).
 
 % preguntas gym
-template([dime,una,rutina,de,entrenamiento,para,el,gym] ,['Si', pero, dime, enfocado, en, que, ?], []).
+template([dime,una,rutina,de,entrenamiento,para,el,gym] ,['Si, claro pero enfocado en que, fuerza o resistencia'], []).
 
 % preguntas sobre el gym
 template([me, puedes, recomendar, una, rutina, de, pierna, para, ganar,fuerza], 
@@ -415,7 +415,7 @@ template([a, los, cuantos, meses, veo, resultados, del, gym],
      'Recuerda ajustar tu rutina de ejercicios y dieta según tus objetivos específicos y busca asesoramiento profesional si es necesario.'], []).
 
 % Sintomas lesion gym
-		template([si, tengo, dolor, de, s(_), y , s(_), es , sintoma , de , una , lesion , _], [flagSintomas2], [4, 6]).
+		template([si, tengo, dolor, de, s(_), y , s(_), es , sintoma, de, lesion , _], [flagSintomas2], [4, 6]).
         template([si, tengo, dolor, de, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
         template([si, tengo, dolor, en, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
         template([si, tengo, dolor, en,el, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [5]).
@@ -531,6 +531,7 @@ template([variabilidad, tasas, incidencia, cancer, prostata],
      'Factores geneticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
 
 template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
+
 elizaSintomas(X, R) :-
     sintomas(X),
     (
@@ -584,13 +585,14 @@ elizaSintomas(X, R) :-
 		sintomas1(pantorrilla).
         sintomas1(espalda).
     
-         elizaSintomas2(X,Y, R) :-
-    sintomas2(X,Y),
+    % sintomas binarios
+         elizaSintomas2(X, Y, R) :-
+    sintomas2(X, Y),
     (
-        (X = hombro, Y = espalda), R = ['Si tienes dolor en el hombro y la espalda, es posible que haya una tensión muscular o una lesión en esa área. Es recomendable descansar y, si el dolor persiste, consultar a un profesional médico.'];
-        (X = bicep, Y = tricep), R = ['Si tienes dolor en el bíceps y el tríceps, podría ser consecuencia de un entrenamiento intenso. Asegúrate de realizar estiramientos adecuados y descansar.'];
-        (X = cuadricep, Y = femoral), R = ['El dolor en el cuádriceps y el femoral puede indicar una posible lesión o desgarre muscular. Consulta a un médico para un diagnóstico adecuado.']; 
-        (X = gluteo, Y = pantorrilla), R = ['El dolor de gluteo y pantorrilla puede indicar una posible lesion o desgarre muscular.']; 
+        X = hombro, Y = espalda, R = ['Si tienes dolor en el hombro y la espalda, es posible que haya una tensión muscular o una lesión en esa área. Es recomendable descansar y, si el dolor persiste, consultar a un profesional médico.'];
+        X = bicep, Y = tricep, R = ['Si tienes dolor en el bíceps y el tríceps, podría ser consecuencia de un entrenamiento intenso. Asegúrate de realizar estiramientos adecuados y descansar.'];
+        X = cuadricep, Y = femoral, R = ['El dolor en el cuádriceps y el femoral puede indicar una posible lesión o desgarre muscular. Consulta a un médico para un diagnóstico adecuado.']; 
+        X = gluteo, Y = pantorrilla, R = ['El dolor de gluteo y pantorrilla puede indicar una posible lesion o desgarre muscular.']; 
         R = ['Si, el dolor de', X, 'puede ser un sintoma de una lesion']
     ).
         sintomas2(hombro,espalda).
@@ -811,14 +813,15 @@ replace0([I|_], Input, _, Resp, R):-
     X == flagSintomas1,
     elizaSintomas1(Atom, R).
 
- % Arnold elizaSintomas2:
-replace0([I|_], Input, _, Resp, R):-
-    nth0(I, Input, Atom),
+
+replace0([I|_], Input, _, Resp, R) :-
+    nth0(I, Input, _),
     nth0(0, Resp, X),
     nth0(1, Resp, Y),
     X == flagSintomas2,
     Y == flagSintomas2,
-    elizaSintomas2(Atom, R).
+    elizaSintomas2(X, Y, R).
+
 
 
 replace0([I|Index], Input, N, Resp, R):-
