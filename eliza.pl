@@ -22,7 +22,7 @@ arnold(Input) :-
     readln(Input1),
     arnold(Input1), !.
 
-template([alumno], ['Josue Montalvan Zavala el guapo'],[]).
+template([alumno], ['Josue Montalvan Zavala'],[]).
 
 template([hola, mi, nombre, es, s(_), '.'], ['Hola', 0, 'Como', estas, tu, '?'], [4]).
 template([buendia, mi, nombre, es, s(_), '.'], ['buen dia', 'Como', estas, tu, 0, '?'], [4]).
@@ -415,13 +415,25 @@ template([a, los, cuantos, meses, veo, resultados, del, gym],
      'Recuerda ajustar tu rutina de ejercicios y dieta según tus objetivos específicos y busca asesoramiento profesional si es necesario.'], []).
 
 % Sintomas lesion gym
-		template([si, tengo, dolor, de, s(_), y , s(_), es , sintoma, de, lesion , _], [flagSintomas2], [4, 6]).
         template([si, tengo, dolor, de, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
         template([si, tengo, dolor, en, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [4]).
         template([si, tengo, dolor, en,el, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [5]).
         template([si, tengo, dolor, en,la, s(_), es, sintoma, de, una,lesion, _], [flagSintomas1], [5]).
 		template([me,duele,el, s(_),es,una,lesion, _], [flagSintomas1], [3]).
         template([me,duele,la, s(_),es,una,lesion, _], [flagSintomas1], [3]).
+
+% lesiones binarias
+
+        template([tengo,dolor,de, s(_), y ,s(_), es, lesion, _]  ,[flagGym], [3,5]).
+
+
+% sintomas binarios
+
+        template([tengo, s(_), y ,s(_), es, sintoma,de,cancer,de,prostata, _]  ,[flagSinDoble], [1,3]).  
+
+% sintomas sintomasTriples
+
+        template([tengo, s(_), s(_) ,s(_), es, sintoma,de,cancer,de,prostata, _]  ,[flagSinTriple], [1,2,3]).  
 
         % Soluciones - gym
         template([que, debo, de, hacer, si, tengo, una, lesion,en,la, s(_), _], [flagSoluciones1], [10]).
@@ -440,7 +452,6 @@ template([a, los, cuantos, meses, veo, resultados, del, gym],
 		template([que, debo, de, tomar, si, tengo, dolor, al, s(_), _], [flagSoluciones], [8]).
 		template([tengo, dolor, al, s(_)], [flagSoluciones], [3]).
 		template([tengo, un, s(_)], [flagSoluciones], [2]).
-		template([tengo, s(_)], [flagSoluciones], [1]).
 
 template([que,se,hace,para,el,mal,de,amores], 
          ['Una cheve padrino, arreglao'], []).
@@ -530,7 +541,35 @@ template([variabilidad, tasas, incidencia, cancer, prostata],
     ['Es importante destacar que las tasas de incidencia del cancer de prostata pueden variar segun la region geografica y los grupos etnicos.', 
      'Factores geneticos, ambientales y de estilo de vida pueden contribuir a estas variaciones.'], []).
 
+
 template(_, ['Por favor explicate un poco mas no te entiendo,'], []).
+
+% sintomas dobles
+        sintomasDGym(X, Y, R):- sinGym(X ,Y), R = ['Con esos dos sintomas es posible que tengas una lesion'].
+        
+        sinGym(hombro ,espalda).
+        sinGym(hombro, bicep).
+        sinGym(hombro, tricep).
+        sinGym(hombro, femoral).
+        sinGym(hombro, gluteo).
+        sinGym(hombro, cruadricep).
+        sinGym(hombro, trapecio).
+        sinGym(espalda, bicep).
+        sinGym(espalda, tricep).
+        sinGym(espalda, femoral).
+        sinGym(espalda, cuadricep).
+        sinGym(espalda, trapecio).
+        sinGym(espalda, gluteo).
+        sinGym(tricep, bicep).
+        sinGym(tricep, espalda).
+        sinGym(tricep, pecho).
+        sinGym(tricep, hombro).
+        sinGym(tricep, cuadricep).
+        sinGym(pecho, hombro).
+        sinGym(pecho, tricep).
+        sinGym(pecho, espalda).
+        sinGym(pecho, trapecio).
+
 
 elizaSintomas(X, R) :-
     sintomas(X),
@@ -559,6 +598,58 @@ elizaSintomas(X, R) :-
         sintomas(dolor_en_la_espalda).
 		sintomas(dolor_al_eyacular).
 
+        % ----------------------------------------------------------
+
+            % sintomas dobles
+        sintomasDobles(X, Y, R):- sinD(X ,Y), R = ['Con esos dos sintomas es posible que tengas cancer de prostata'].
+
+        sinD(dificultad_al_orinar, orina_interrumpida).
+        sinD(dificultad_al_orinar, la_orina_interrumpida).
+        sinD(dificultad_al_orinar, miccion).
+        sinD(dificultad_al_orinar, ardor_al_orinar).
+        sinD(dificultad_al_orinar, sangre_en_la_orina).
+        sinD(dificultad_al_orinar, dolor_al_eyacular).
+        sinD(orina_interrumpida, la_orina_interrumpida).
+        sinD(orina_interrumpida, miccion).
+        sinD(orina_interrumpida, ardor_al_orinar).
+        sinD(orina_interrumpida, sangre_en_la_orina).
+        sinD(orina_interrumpida, dolor_al_eyacular).
+        sinD(la_orina_interrumpida, miccion).
+        sinD(la_orina_interrumpida, ardor_al_orinar).
+        sinD(la_orina_interrumpida, sangre_en_la_orina).
+        sinD(la_orina_interrumpida, dolor_al_eyacular).
+        sinD(miccion, ardor_al_orinar).
+        sinD(miccion, sangre_en_la_orina).
+        sinD(miccion, dolor_al_eyacular).
+        sinD(ardor_al_orinar, sangre_en_la_orina).
+        sinD(ardor_al_orinar, dolor_al_eyacular).
+        sinD(sangre_en_la_orina, dolor_al_eyacular).
+         
+ % sintomas triples
+        sintomasTriples(X, Y, Z, R):- sinT(X ,Y, Z), R = ['Con esos tres sintomas es posible que tengas cancer de prostata'].
+
+        sinT(dificultad_al_orinar, orina_interrumpida, miccion).
+        sinT(dificultad_al_orinar, la_orina_interrumpida, miccion).
+        sinT(dificultad_al_orinar, miccion, orina_interrumpida).
+        sinT(dificultad_al_orinar, ardor_al_orinar, dolor_al_eyacular).
+        sinT(dificultad_al_orinar, sangre_en_la_orina, miccion).
+        sinT(orina_interrumpida, miccion, la_orina_interrumpida).
+        sinT(orina_interrumpida, ardor_al_orinar, dolor_al_eyacular).
+        sinT(orina_interrumpida, sangre_en_la_orina, miccion).
+        sinT(la_orina_interrumpida, miccion, orina_interrumpida).
+        sinT(la_orina_interrumpida, ardor_al_orinar, dolor_al_eyacular).
+        sinT(la_orina_interrumpida, sangre_en_la_orina, miccion).
+        sinT(miccion, orina_interrumpida, la_orina_interrumpida).
+        sinT(miccion, ardor_al_orinar, dolor_al_eyacular).
+        sinT(miccion, sangre_en_la_orina, orina_interrumpida).
+        sinT(ardor_al_orinar, dolor_al_eyacular, dificultad_al_orinar).
+        sinT(ardor_al_orinar, sangre_en_la_orina, miccion).
+        sinT(ardor_al_orinar, miccion, la_orina_interrumpida).
+        sinT(sangre_en_la_orina, miccion, orina_interrumpida).
+        sinT(sangre_en_la_orina, ardor_al_orinar, dolor_al_eyacular).
+        sinT(sangre_en_la_orina, la_orina_interrumpida, miccion).
+                
+        % --------------------------------------------------------
 
         elizaSintomas1(X, R) :-
     sintomas1(X),
@@ -585,22 +676,8 @@ elizaSintomas(X, R) :-
 		sintomas1(pantorrilla).
         sintomas1(espalda).
     
-    % sintomas binarios
-         elizaSintomas2(X, Y, R) :-
-    sintomas2(X, Y),
-    (
-        X = hombro, Y = espalda, R = ['Si tienes dolor en el hombro y la espalda, es posible que haya una tensión muscular o una lesión en esa área. Es recomendable descansar y, si el dolor persiste, consultar a un profesional médico.'];
-        X = bicep, Y = tricep, R = ['Si tienes dolor en el bíceps y el tríceps, podría ser consecuencia de un entrenamiento intenso. Asegúrate de realizar estiramientos adecuados y descansar.'];
-        X = cuadricep, Y = femoral, R = ['El dolor en el cuádriceps y el femoral puede indicar una posible lesión o desgarre muscular. Consulta a un médico para un diagnóstico adecuado.']; 
-        X = gluteo, Y = pantorrilla, R = ['El dolor de gluteo y pantorrilla puede indicar una posible lesion o desgarre muscular.']; 
-        R = ['Si, el dolor de', X, 'puede ser un sintoma de una lesion']
-    ).
-        sintomas2(hombro,espalda).
-		sintomas2(bicep,tricep).
-        sintomas2(tricep,femoral).
-		sintomas2(gluteo,pantorrilla).
 
-        
+     
 % --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         % Soluciones 
@@ -813,17 +890,6 @@ replace0([I|_], Input, _, Resp, R):-
     X == flagSintomas1,
     elizaSintomas1(Atom, R).
 
-
-replace0([I|_], Input, _, Resp, R) :-
-    nth0(I, Input, _),
-    nth0(0, Resp, X),
-    nth0(1, Resp, Y),
-    X == flagSintomas2,
-    Y == flagSintomas2,
-    elizaSintomas2(X, Y, R).
-
-
-
 replace0([I|Index], Input, N, Resp, R):-
     length(Index, M), M =:= 0,
     nth0(I, Input, Atom),
@@ -849,3 +915,36 @@ replace0([I|_], Input, _, Resp, R):-
     nth0(0, Resp, X),
     X == flagSoluciones1,
     elizaSoluciones1(Atom, R).
+
+% sintomas dobles gym
+    replace0([I,J|_], Input, _,Resp, R):-
+    nth0(I,Input,Atom),
+    nth0(0,Resp,X),
+    X == flagGym,
+    nth0(J,Input,Atom1),
+    nth0(0,Resp,Y),
+    Y == flagGym,
+    sintomasDGym(Atom ,Atom1 , R).
+    
+    % sintomas dobles cancer de prostata
+    replace0([I,J|_], Input, _,Resp, R):-
+    nth0(I,Input,Atom),
+    nth0(0,Resp,X),
+    X == flagSinDoble,
+    nth0(J,Input,Atom1),
+    nth0(0,Resp,Y),
+    Y == flagSinDoble,
+    sintomasDobles(Atom ,Atom1 , R).
+
+    % sintomas sintomasTriples cancer de prostata
+        replace0([I,J,K|_], Input, _,Resp, R):-
+        nth0(I,Input,Atom),
+        nth0(0,Resp,X),
+        X == flagSinTriple,
+        nth0(J,Input,Atom1),
+        nth0(0,Resp,Y),
+        Y == flagSinTriple,
+        nth0(K,Input,Atom2),
+        nth0(0,Resp,Z),
+        Z == flagSinTriple,
+        sintomasTriples(Atom ,Atom1 ,Atom2, R).
