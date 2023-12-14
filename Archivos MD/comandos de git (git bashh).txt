@@ -1,0 +1,47 @@
+comandos de git (git bashh)
+ssh-keygen
+
+buscar archivo en: 
+/c/users/crazu/.ssh/id_rsa.pub
+
+en git bash escribir cat + la ruta del id_rsa.pub para obtener la llave
+
+en github en settings y en SSH and GPG keys copiar la llave que nos dio en el git bash
+cdC:\Users\crazu\Documents\Prolog
+
+
+posicionarnos en carpeta donde estára el repositorio en la pc (preparar carpeta para tener un repositorio):comando --> git init
+
+git remote add origin <--- en cmd y despues en giy hub buscar en el quick setup en ssh de nuestro repositorio y pegar en el cmd
+
+git branch -M main <---crear rama principal
+
+---------------ANTES DE HACER COMIT STATUS VERDE--------------------
+
+<<<<< git status antes de hacer un git push >>>>>
+
+git add . ()
+--------------------------------------------------------------------
+----------------HACER COMMIT-------------------------
+
+git commit -m 'mi primer comit'
+--------------------------------------------------
+
+ver si hay conexion con ---> git pll --rebase origin main
+
+
+------------------HACER PUSH---------------------
+git push origin main 
+--------------------------------------------------
+
+en dado caso de que no identifique el usuario y correo escribir:
+
+git config --global user.email "Introducir correo con el que se entra al git"
+
+git config --global user.name "Introduccir username de git"
+
+
+git pull --rebase origin main
+git push origin main
+
+
